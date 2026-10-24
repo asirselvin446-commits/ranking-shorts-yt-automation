@@ -48,6 +48,8 @@ THUMB_EXT = [".jpg", ".jpeg", ".png"]
 def get_creds(interactive=False):
     creds = None
     if TOKEN.exists():
+        raw = TOKEN.read_text(encoding="utf-8-sig")
+        TOKEN.write_text(raw, encoding="utf-8")
         creds = Credentials.from_authorized_user_file(str(TOKEN), SCOPES)
     if creds and creds.valid:
         return creds
