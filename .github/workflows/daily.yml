@@ -1,0 +1,66 @@
+name: Daily Ranking Shorts Automation
+
+on:
+  schedule:
+    # 22:00 UTC = 03:30 AM IST (18:00 NY)
+    # 03:00 UTC = 08:30 AM IST (23:00 NY)
+    - cron: '0 3,22 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-schedule:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install System Dependencies (FFmpeg & Fonts)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg fonts-noto-color-emoji fonts-dejavu-core
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Python Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Restore Credentials from Secrets
+        env:
+          TOKEN_JSON: ${{ secrets.YT_TOKEN_JSON }}
+          CLIENT_SECRET_JSON: ${{ secrets.YT_CLIENT_SECRET_JSON }}
+          OPENROUTER_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: |
+          if [ -n "$TOKEN_JSON" ]; then
+            echo "$TOKEN_JSON" > token.json
+          fi
+          if [ -n "$CLIENT_SECRET_JSON" ]; then
+            echo "$CLIENT_SECRET_JSON" > client_secret.json
+          fi
+          if [ -n "$OPENROUTER_KEY" ]; then
+            echo "OPENROUTER_API_KEY=$OPENROUTER_KEY" >> .env
+            echo "OPENROUTER_API_KEY=$OPENROUTER_KEY" >> $GITHUB_ENV
+          fi
+
+      - name: Run Daily Ranking Shorts Pipeline
+        run: |
+          python daily.py
+
+      - name: Commit and Push State Updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add state.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(auto): update publication state [skip ci]" && git push)

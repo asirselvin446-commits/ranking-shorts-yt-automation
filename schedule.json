@@ -1,0 +1,9 @@
+{
+ "mode": "auto",
+ "audience_tz": "America/New_York",
+ "slots": [
+  "18:00",
+  "23:00"
+ ],
+  "reason": "Analysis of 872 Shorts from 8 top ranking channels (research/publish_times.json). Strongest well-sampled upload hours: 03:00 IST (1.40x channel median, 46% reached 2x, n=80) and 07:00-10:00 IST (1.23-1.69x, 42-48% reached 2x, n=105). Both are the US evening. Slots: 18:00 and 23:00 New York = 03:30 and 08:30 IST during US summer time, 04:30 and 09:30 IST in US winter time. In auto mode this retargets to the evening of the channel's own top audience country once it has enough views."
+}

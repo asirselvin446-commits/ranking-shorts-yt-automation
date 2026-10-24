@@ -1,0 +1,5234 @@
+[
+{
+"ch": "@aurashorts67",
+"hour": 7,
+"dow": "Tue",
+"rel": 0.22487730705836448
+},
+{
+"ch": "@aurashorts67",
+"hour": 1,
+"dow": "Tue",
+"rel": 0.5745504984031558
+},
+{
+"ch": "@aurashorts67",
+"hour": 6,
+"dow": "Mon",
+"rel": 1.061343980238853
+},
+{
+"ch": "@aurashorts67",
+"hour": 4,
+"dow": "Mon",
+"rel": 0.45949903601824127
+},
+{
+"ch": "@aurashorts67",
+"hour": 6,
+"dow": "Sun",
+"rel": 0.9197608277917952
+},
+{
+"ch": "@aurashorts67",
+"hour": 2,
+"dow": "Sun",
+"rel": 0.1368518188570031
+},
+{
+"ch": "@aurashorts67",
+"hour": 4,
+"dow": "Sat",
+"rel": 9.783393969350552
+},
+{
+"ch": "@aurashorts67",
+"hour": 14,
+"dow": "Fri",
+"rel": 0.7699235136831767
+},
+{
+"ch": "@aurashorts67",
+"hour": 3,
+"dow": "Fri",
+"rel": 1.8900520530991423
+},
+{
+"ch": "@aurashorts67",
+"hour": 12,
+"dow": "Thu",
+"rel": 1.1736573384907476
+},
+{
+"ch": "@aurashorts67",
+"hour": 10,
+"dow": "Thu",
+"rel": 3.376205775460901
+},
+{
+"ch": "@aurashorts67",
+"hour": 8,
+"dow": "Wed",
+"rel": 0.7644470499731465
+},
+{
+"ch": "@aurashorts67",
+"hour": 1,
+"dow": "Wed",
+"rel": 0.9861818850616993
+},
+{
+"ch": "@aurashorts67",
+"hour": 4,
+"dow": "Mon",
+"rel": 1.191914942260079
+},
+{
+"ch": "@aurashorts67",
+"hour": 5,
+"dow": "Sun",
+"rel": 2.187150017785288
+},
+{
+"ch": "@aurashorts67",
+"hour": 3,
+"dow": "Sat",
+"rel": 0.4254465639909547
+},
+{
+"ch": "@aurashorts67",
+"hour": 16,
+"dow": "Fri",
+"rel": 2.7908356914006696
+},
+{
+"ch": "@aurashorts67",
+"hour": 12,
+"dow": "Fri",
+"rel": 0.0784044457472088
+},
+{
+"ch": "@aurashorts67",
+"hour": 13,
+"dow": "Thu",
+"rel": 1.013475564547184
+},
+{
+"ch": "@aurashorts67",
+"hour": 9,
+"dow": "Wed",
+"rel": 0.0795181815453212
+},
+{
+"ch": "@aurashorts67",
+"hour": 3,
+"dow": "Wed",
+"rel": 0.3094070442512011
+},
+{
+"ch": "@aurashorts67",
+"hour": 9,
+"dow": "Tue",
+"rel": 2.7583802552013186
+},
+{
+"ch": "@aurashorts67",
+"hour": 3,
+"dow": "Tue",
+"rel": 9.063329546376176
+},
+{
+"ch": "@aurashorts67",
+"hour": 7,
+"dow": "Mon",
+"rel": 0.39499866211210033
+},
+{
+"ch": "@aurashorts67",
+"hour": 3,
+"dow": "Mon",
+"rel": 2.4627751051950284
+},
+{
+"ch": "@aurashorts67",
+"hour": 14,
+"dow": "Sun",
+"rel": 1.375488488735878
+},
+{
+"ch": "@aurashorts67",
+"hour": 8,
+"dow": "Sun",
+"rel": 0.8710282450806277
+},
+{
+"ch": "@aurashorts67",
+"hour": 4,
+"dow": "Sun",
+"rel": 3.4462699749217864
+},
+{
+"ch": "@aurashorts67",
+"hour": 11,
+"dow": "Sat",
+"rel": 7.56578276659891
+},
+{
+"ch": "@aurashorts67",
+"hour": 8,
+"dow": "Sat",
+"rel": 1.1129342148705441
+},
+{
+"ch": "@aurashorts67",
+"hour": 6,
+"dow": "Sat",
+"rel": 0.07114728198015073
+},
+{
+"ch": "@aurashorts67",
+"hour": 2,
+"dow": "Sat",
+"rel": 2.068052322592552
+},
+{
+"ch": "@aurashorts67",
+"hour": 6,
+"dow": "Fri",
+"rel": 0.08025360479366192
+},
+{
+"ch": "@aurashorts67",
+"hour": 3,
+"dow": "Fri",
+"rel": 0.5846180569525149
+},
+{
+"ch": "@aurashorts67",
+"hour": 8,
+"dow": "Thu",
+"rel": 0.7427463166573111
+},
+{
+"ch": "@aurashorts67",
+"hour": 2,
+"dow": "Thu",
+"rel": 0.13035485640535385
+},
+{
+"ch": "@aurashorts67",
+"hour": 9,
+"dow": "Wed",
+"rel": 2.2413805215016787
+},
+{
+"ch": "@aurashorts67",
+"hour": 4,
+"dow": "Wed",
+"rel": 2.099917683174096
+},
+{
+"ch": "@aurashorts67",
+"hour": 14,
+"dow": "Tue",
+"rel": 0.61616564521001
+},
+{
+"ch": "@aurashorts67",
+"hour": 8,
+"dow": "Tue",
+"rel": 1.8852134330331227
+},
+{
+"ch": "@aurashorts67",
+"hour": 5,
+"dow": "Tue",
+"rel": 2.3996107033586416
+},
+{
+"ch": "@aurashorts67",
+"hour": 6,
+"dow": "Mon",
+"rel": 0.36445343607290626
+},
+{
+"ch": "@aurashorts67",
+"hour": 3,
+"dow": "Mon",
+"rel": 0.1266097920622057
+},
+{
+"ch": "@aurashorts67",
+"hour": 9,
+"dow": "Sun",
+"rel": 0.9708731267174617
+},
+{
+"ch": "@aurashorts67",
+"hour": 7,
+"dow": "Sun",
+"rel": 0.052703204097832496
+},
+{
+"ch": "@aurashorts67",
+"hour": 3,
+"dow": "Sun",
+"rel": 21.15189070062539
+},
+{
+"ch": "@aurashorts67",
+"hour": 6,
+"dow": "Sat",
+"rel": 0.06243562013179633
+},
+{
+"ch": "@aurashorts67",
+"hour": 2,
+"dow": "Sat",
+"rel": 1.604302954018166
+},
+{
+"ch": "@aurashorts67",
+"hour": 8,
+"dow": "Fri",
+"rel": 0.07359673440402682
+},
+{
+"ch": "@aurashorts67",
+"hour": 6,
+"dow": "Fri",
+"rel": 0.5453762402603997
+},
+{
+"ch": "@aurashorts67",
+"hour": 4,
+"dow": "Fri",
+"rel": 0.6007306975345185
+},
+{
+"ch": "@aurashorts67",
+"hour": 7,
+"dow": "Thu",
+"rel": 0.6062909468733975
+},
+{
+"ch": "@aurashorts67",
+"hour": 6,
+"dow": "Thu",
+"rel": 7.0280409808793785
+},
+{
+"ch": "@aurashorts67",
+"hour": 2,
+"dow": "Thu",
+"rel": 0.5031922196869406
+},
+{
+"ch": "@aurashorts67",
+"hour": 12,
+"dow": "Wed",
+"rel": 0.17679815007462157
+},
+{
+"ch": "@aurashorts67",
+"hour": 8,
+"dow": "Wed",
+"rel": 1.2339554033109372
+},
+{
+"ch": "@aurashorts67",
+"hour": 4,
+"dow": "Wed",
+"rel": 1.5540011788740156
+},
+{
+"ch": "@aurashorts67",
+"hour": 6,
+"dow": "Tue",
+"rel": 5.828486219754633
+},
+{
+"ch": "@aurashorts67",
+"hour": 2,
+"dow": "Tue",
+"rel": 0.13651820900555017
+},
+{
+"ch": "@aurashorts67",
+"hour": 12,
+"dow": "Mon",
+"rel": 0.7417886571373286
+},
+{
+"ch": "@aurashorts67",
+"hour": 6,
+"dow": "Mon",
+"rel": 1.160610792125428
+},
+{
+"ch": "@aurashorts67",
+"hour": 8,
+"dow": "Sun",
+"rel": 3.5254915859942613
+},
+{
+"ch": "@aurashorts67",
+"hour": 3,
+"dow": "Sun",
+"rel": 0.12777793743027177
+},
+{
+"ch": "@aurashorts67",
+"hour": 7,
+"dow": "Sat",
+"rel": 0.8348829204400534
+},
+{
+"ch": "@aurashorts67",
+"hour": 3,
+"dow": "Sat",
+"rel": 10.309530423698561
+},
+{
+"ch": "@aurashorts67",
+"hour": 0,
+"dow": "Sat",
+"rel": 0.07534422674230364
+},
+{
+"ch": "@aurashorts67",
+"hour": 12,
+"dow": "Fri",
+"rel": 0.693050199214382
+},
+{
+"ch": "@aurashorts67",
+"hour": 9,
+"dow": "Fri",
+"rel": 0.1940901755602685
+},
+{
+"ch": "@aurashorts67",
+"hour": 8,
+"dow": "Thu",
+"rel": 0.9100202375501388
+},
+{
+"ch": "@aurashorts67",
+"hour": 1,
+"dow": "Thu",
+"rel": 0.3424801440193218
+},
+{
+"ch": "@aurashorts67",
+"hour": 11,
+"dow": "Wed",
+"rel": 0.0742951182737606
+},
+{
+"ch": "@aurashorts67",
+"hour": 5,
+"dow": "Wed",
+"rel": 13.130500331757883
+},
+{
+"ch": "@aurashorts67",
+"hour": 3,
+"dow": "Wed",
+"rel": 0.79399681078178
+},
+{
+"ch": "@aurashorts67",
+"hour": 12,
+"dow": "Tue",
+"rel": 0.8551025894995916
+},
+{
+"ch": "@aurashorts67",
+"hour": 10,
+"dow": "Tue",
+"rel": 3.0528320755909855
+},
+{
+"ch": "@aurashorts67",
+"hour": 8,
+"dow": "Tue",
+"rel": 0.3743166394299512
+},
+{
+"ch": "@aurashorts67",
+"hour": 14,
+"dow": "Mon",
+"rel": 10.695637591393071
+},
+{
+"ch": "@aurashorts67",
+"hour": 5,
+"dow": "Mon",
+"rel": 1.8679145105597352
+},
+{
+"ch": "@aurashorts67",
+"hour": 12,
+"dow": "Sun",
+"rel": 0.10760578095294658
+},
+{
+"ch": "@aurashorts67",
+"hour": 8,
+"dow": "Sun",
+"rel": 3.252954050096398
+},
+{
+"ch": "@aurashorts67",
+"hour": 9,
+"dow": "Sat",
+"rel": 5.202206525189013
+},
+{
+"ch": "@aurashorts67",
+"hour": 11,
+"dow": "Fri",
+"rel": 5.15552592405267
+},
+{
+"ch": "@aurashorts67",
+"hour": 7,
+"dow": "Fri",
+"rel": 8.958717824434622
+},
+{
+"ch": "@aurashorts67",
+"hour": 4,
+"dow": "Fri",
+"rel": 0.06297690594743857
+},
+{
+"ch": "@aurashorts67",
+"hour": 7,
+"dow": "Thu",
+"rel": 1.8023673271809648
+},
+{
+"ch": "@aurashorts67",
+"hour": 2,
+"dow": "Thu",
+"rel": 21.981118346562138
+},
+{
+"ch": "@aurashorts67",
+"hour": 9,
+"dow": "Wed",
+"rel": 2.8777499982438224
+},
+{
+"ch": "@aurashorts67",
+"hour": 6,
+"dow": "Wed",
+"rel": 1.1123860320671612
+},
+{
+"ch": "@aurashorts67",
+"hour": 10,
+"dow": "Tue",
+"rel": 0.07820136777484656
+},
+{
+"ch": "@aurashorts67",
+"hour": 9,
+"dow": "Tue",
+"rel": 0.06899261192118787
+},
+{
+"ch": "@aurashorts67",
+"hour": 3,
+"dow": "Tue",
+"rel": 0.07061110504431634
+},
+{
+"ch": "@aurashorts67",
+"hour": 9,
+"dow": "Mon",
+"rel": 5.870387974718708
+},
+{
+"ch": "@aurashorts67",
+"hour": 5,
+"dow": "Mon",
+"rel": 1.210763387979189
+},
+{
+"ch": "@aurashorts67",
+"hour": 9,
+"dow": "Sun",
+"rel": 0.8785377875101938
+},
+{
+"ch": "@aurashorts67",
+"hour": 2,
+"dow": "Sun",
+"rel": 3.0974867504395234
+},
+{
+"ch": "@aurashorts67",
+"hour": 11,
+"dow": "Sat",
+"rel": 6.76220527351346
+},
+{
+"ch": "@aurashorts67",
+"hour": 3,
+"dow": "Sat",
+"rel": 0.465033740958081
+},
+{
+"ch": "@aurashorts67",
+"hour": 6,
+"dow": "Fri",
+"rel": 0.06960312305822654
+},
+{
+"ch": "@aurashorts67",
+"hour": 2,
+"dow": "Fri",
+"rel": 4.16900532025971
+},
+{
+"ch": "@aurashorts67",
+"hour": 10,
+"dow": "Thu",
+"rel": 0.13419571224489926
+},
+{
+"ch": "@aurashorts67",
+"hour": 8,
+"dow": "Thu",
+"rel": 3.5379455023018695
+},
+{
+"ch": "@aurashorts67",
+"hour": 10,
+"dow": "Wed",
+"rel": 0.947858389515046
+},
+{
+"ch": "@aurashorts67",
+"hour": 9,
+"dow": "Wed",
+"rel": 1.219697286099185
+},
+{
+"ch": "@aurashorts67",
+"hour": 5,
+"dow": "Wed",
+"rel": 1.5062678930532645
+},
+{
+"ch": "@aurashorts67",
+"hour": 3,
+"dow": "Tue",
+"rel": 0.6159193972032715
+},
+{
+"ch": "@aurashorts67",
+"hour": 2,
+"dow": "Mon",
+"rel": 4.120558834817782
+},
+{
+"ch": "@aurashorts67",
+"hour": 7,
+"dow": "Sun",
+"rel": 2.217065318944173
+},
+{
+"ch": "@aurashorts67",
+"hour": 6,
+"dow": "Sat",
+"rel": 0.6721474729245336
+},
+{
+"ch": "@aurashorts67",
+"hour": 21,
+"dow": "Fri",
+"rel": 3.755797844180443
+},
+{
+"ch": "@aurashorts67",
+"hour": 8,
+"dow": "Thu",
+"rel": 3.0745624404097067
+},
+{
+"ch": "@aurashorts67",
+"hour": 10,
+"dow": "Wed",
+"rel": 0.11004195028932225
+},
+{
+"ch": "@aurashorts67",
+"hour": 2,
+"dow": "Wed",
+"rel": 0.345050676894644
+},
+{
+"ch": "@aurashorts67",
+"hour": 9,
+"dow": "Tue",
+"rel": 15.077538618341773
+},
+{
+"ch": "@aurashorts67",
+"hour": 6,
+"dow": "Tue",
+"rel": 0.36035636991099695
+},
+{
+"ch": "@aurashorts67",
+"hour": 10,
+"dow": "Mon",
+"rel": 0.8148129415588853
+},
+{
+"ch": "@aurashorts67",
+"hour": 7,
+"dow": "Mon",
+"rel": 2.568438234601038
+},
+{
+"ch": "@aurashorts67",
+"hour": 10,
+"dow": "Sun",
+"rel": 10.354463532496627
+},
+{
+"ch": "@aurashorts67",
+"hour": 7,
+"dow": "Sun",
+"rel": 0.8495466827085493
+},
+{
+"ch": "@aurashorts67",
+"hour": 2,
+"dow": "Sun",
+"rel": 0.3911442677410641
+},
+{
+"ch": "@aurashorts67",
+"hour": 11,
+"dow": "Sat",
+"rel": 0.26403865889350603
+},
+{
+"ch": "@aurashorts67",
+"hour": 7,
+"dow": "Sat",
+"rel": 2.8349000351874096
+},
+{
+"ch": "@aurashorts67",
+"hour": 12,
+"dow": "Fri",
+"rel": 2.5186235911465666
+},
+{
+"ch": "@aurashorts67",
+"hour": 8,
+"dow": "Fri",
+"rel": 0.8342588707715238
+},
+{
+"ch": "@aurashorts67",
+"hour": 10,
+"dow": "Thu",
+"rel": 1.120531374588815
+},
+{
+"ch": "@aurashorts67",
+"hour": 14,
+"dow": "Wed",
+"rel": 3.438296801649657
+},
+{
+"ch": "@aurashorts67",
+"hour": 10,
+"dow": "Wed",
+"rel": 0.17583103912699463
+},
+{
+"ch": "@aurashorts67",
+"hour": 7,
+"dow": "Wed",
+"rel": 6.128585906771884
+},
+{
+"ch": "@aurashorts67",
+"hour": 16,
+"dow": "Tue",
+"rel": 0.05436461181134695
+},
+{
+"ch": "@aurashorts67",
+"hour": 12,
+"dow": "Tue",
+"rel": 3.9770910166096067
+},
+{
+"ch": "@aurashorts67",
+"hour": 8,
+"dow": "Mon",
+"rel": 1.8980040245200687
+},
+{
+"ch": "@aurashorts67",
+"hour": 3,
+"dow": "Mon",
+"rel": 1.1490463317923674
+},
+{
+"ch": "@aurashorts67",
+"hour": 10,
+"dow": "Sun",
+"rel": 0.15353537675753448
+},
+{
+"ch": "@aurashorts67",
+"hour": 2,
+"dow": "Sat",
+"rel": 4.155703329903997
+},
+{
+"ch": "@aurashorts67",
+"hour": 12,
+"dow": "Fri",
+"rel": 1.754549744843384
+},
+{
+"ch": "@aurashorts67",
+"hour": 3,
+"dow": "Fri",
+"rel": 0.20490388600556483
+},
+{
+"ch": "@aurashorts67",
+"hour": 14,
+"dow": "Thu",
+"rel": 2.0612214948454595
+},
+{
+"ch": "@aurashorts67",
+"hour": 2,
+"dow": "Thu",
+"rel": 1.37836453262371
+},
+{
+"ch": "@aurashorts67",
+"hour": 2,
+"dow": "Wed",
+"rel": 1.3473766221491652
+},
+{
+"ch": "@aurashorts67",
+"hour": 22,
+"dow": "Tue",
+"rel": 4.883593534968047
+},
+{
+"ch": "@aurashorts67",
+"hour": 7,
+"dow": "Tue",
+"rel": 11.949548023789498
+},
+{
+"ch": "@aurashorts67",
+"hour": 7,
+"dow": "Mon",
+"rel": 13.298696405456027
+},
+{
+"ch": "@aurashorts67",
+"hour": 1,
+"dow": "Mon",
+"rel": 0.5416352630210978
+},
+{
+"ch": "@aurashorts67",
+"hour": 5,
+"dow": "Sun",
+"rel": 0.08904470972302847
+},
+{
+"ch": "@aurashorts67",
+"hour": 3,
+"dow": "Sun",
+"rel": 0.3059309624299365
+},
+{
+"ch": "@aurashorts67",
+"hour": 9,
+"dow": "Sat",
+"rel": 2.0232494902295866
+},
+{
+"ch": "@aurashorts67",
+"hour": 3,
+"dow": "Sat",
+"rel": 0.6143039694080277
+},
+{
+"ch": "@aurashorts67",
+"hour": 6,
+"dow": "Fri",
+"rel": 2.151466024991363
+},
+{
+"ch": "@aurashorts67",
+"hour": 2,
+"dow": "Fri",
+"rel": 4.771150666613023
+},
+{
+"ch": "@aurashorts67",
+"hour": 7,
+"dow": "Thu",
+"rel": 0.5545742674664618
+},
+{
+"ch": "@aurashorts67",
+"hour": 4,
+"dow": "Thu",
+"rel": 0.8989671760858445
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Wed",
+"rel": 0.1287211523568589
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Mon",
+"rel": 0.20161426334176605
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Sun",
+"rel": 1.2519593164334761
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Fri",
+"rel": 2.942950074861893
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Thu",
+"rel": 1.063272927530246
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Wed",
+"rel": 0.04139260330080713
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Tue",
+"rel": 0.04547472765759719
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Sat",
+"rel": 16.329660798182662
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Fri",
+"rel": 0.2963016504035658
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Thu",
+"rel": 0.27739859225222435
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Tue",
+"rel": 1.62288880857728
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Mon",
+"rel": 0.19527423546216463
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Sat",
+"rel": 0.17533171562806546
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Thu",
+"rel": 0.44218424630423186
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Tue",
+"rel": 0.14838143425060665
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Sat",
+"rel": 0.27739170840002064
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Fri",
+"rel": 1.4032457363140414
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Fri",
+"rel": 3.013454489132118
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Tue",
+"rel": 0.30730204622506757
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Sun",
+"rel": 0.16786273598705836
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Sat",
+"rel": 96.48512571635086
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Mon",
+"rel": 0.4305161168189719
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Sat",
+"rel": 2.1520642951795823
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Thu",
+"rel": 0.32367184676544997
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Wed",
+"rel": 0.1719792796048669
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Sun",
+"rel": 0.438164076617275
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Fri",
+"rel": 0.4669867657941384
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Tue",
+"rel": 4.298683463266044
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Sun",
+"rel": 0.4130173645171838
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Wed",
+"rel": 0.35331371435455283
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Sun",
+"rel": 0.9753179479236581
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Sat",
+"rel": 0.13604557110158844
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Thu",
+"rel": 0.21316536733956323
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Wed",
+"rel": 0.13418004715438758
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Tue",
+"rel": 62.02350835527561
+},
+{
+"ch": "@epicxlama",
+"hour": 3,
+"dow": "Sun",
+"rel": 0.5885280603025453
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Sat",
+"rel": 2.668924570189478
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Fri",
+"rel": 3.8769236064501693
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Thu",
+"rel": 0.3100349355499337
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Wed",
+"rel": 0.25415182336035247
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Mon",
+"rel": 440.7078596382536
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Sat",
+"rel": 11.82384222210749
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Fri",
+"rel": 21.201906827060423
+},
+{
+"ch": "@epicxlama",
+"hour": 3,
+"dow": "Thu",
+"rel": 16.37742784862409
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Wed",
+"rel": 81.43845664033593
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Tue",
+"rel": 1.3908961054606157
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Sun",
+"rel": 0.23817440239558058
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Sat",
+"rel": 5.292367528869155
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Fri",
+"rel": 313.1069303182061
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Wed",
+"rel": 0.7580635723751011
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Mon",
+"rel": 0.5836474090901268
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Sun",
+"rel": 3.121228079233139
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Sat",
+"rel": 14.745803431600324
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Fri",
+"rel": 204.6167862735987
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Thu",
+"rel": 2.0783175865214174
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Wed",
+"rel": 43.11043419897775
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Tue",
+"rel": 110.35790524377441
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Mon",
+"rel": 14.094591013130948
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Sun",
+"rel": 0.5252723424028086
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Fri",
+"rel": 18.177424406697988
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Thu",
+"rel": 42.6352281136524
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Tue",
+"rel": 3.235679005971742
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Mon",
+"rel": 30.473877501850037
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Sun",
+"rel": 2.2298518250813153
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Fri",
+"rel": 1.1462715335501747
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Thu",
+"rel": 0.25396595935085275
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Tue",
+"rel": 2.007179857848452
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Sun",
+"rel": 0.8868329116973859
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Sat",
+"rel": 0.17927616294078166
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Fri",
+"rel": 0.36688867090023575
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Thu",
+"rel": 0.5708021408780354
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Wed",
+"rel": 25.752793983513175
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Tue",
+"rel": 1.0248334968248232
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Mon",
+"rel": 0.20729344140981293
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Sun",
+"rel": 1.5216479942175642
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Sat",
+"rel": 1.1034126697299809
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Fri",
+"rel": 0.6586538627015678
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Thu",
+"rel": 22.53124064226341
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Wed",
+"rel": 17.823546216462734
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Tue",
+"rel": 0.29897946891080246
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Mon",
+"rel": 0.23433321286591977
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Sun",
+"rel": 0.3596606260863579
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Sat",
+"rel": 3.502999638597759
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Fri",
+"rel": 3.5213864078338237
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Thu",
+"rel": 30.959939422100607
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Wed",
+"rel": 12.682416920508716
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Tue",
+"rel": 1.2769270483762714
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Mon",
+"rel": 0.2433785946615726
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Sun",
+"rel": 0.16249333126817767
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Sat",
+"rel": 0.30904366083260193
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Fri",
+"rel": 9.564038756087907
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Tue",
+"rel": 0.29224017760338683
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Mon",
+"rel": 0.29883490801452495
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Sun",
+"rel": 0.17516650317517682
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Sat",
+"rel": 0.3467189839434147
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Fri",
+"rel": 133.60585815822535
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Thu",
+"rel": 0.26496635517235445
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Sun",
+"rel": 13.99494725248249
+},
+{
+"ch": "@epicxlama",
+"hour": 3,
+"dow": "Sat",
+"rel": 5.789471148054451
+},
+{
+"ch": "@epicxlama",
+"hour": 4,
+"dow": "Fri",
+"rel": 0.32985354604436645
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Thu",
+"rel": 0.20483590617309447
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Wed",
+"rel": 1.4020685975872098
+},
+{
+"ch": "@epicxlama",
+"hour": 3,
+"dow": "Tue",
+"rel": 0.2692549950952553
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Sun",
+"rel": 193.80172440497702
+},
+{
+"ch": "@epicxlama",
+"hour": 2,
+"dow": "Sat",
+"rel": 0.2711342867468635
+},
+{
+"ch": "@epicxlama",
+"hour": 7,
+"dow": "Sun",
+"rel": 3.772915483504569
+},
+{
+"ch": "@goorfo",
+"hour": 14,
+"dow": "Thu",
+"rel": 1.0268720038091184
+},
+{
+"ch": "@goorfo",
+"hour": 14,
+"dow": "Wed",
+"rel": 2.3645504048463
+},
+{
+"ch": "@goorfo",
+"hour": 20,
+"dow": "Sun",
+"rel": 0.19538157154175592
+},
+{
+"ch": "@goorfo",
+"hour": 15,
+"dow": "Sat",
+"rel": 0.17128679486533913
+},
+{
+"ch": "@goorfo",
+"hour": 1,
+"dow": "Mon",
+"rel": 1.2204564185491824
+},
+{
+"ch": "@goorfo",
+"hour": 0,
+"dow": "Sat",
+"rel": 1.0000094335593777
+},
+{
+"ch": "@goorfo",
+"hour": 15,
+"dow": "Mon",
+"rel": 2.4150747641450807
+},
+{
+"ch": "@goorfo",
+"hour": 1,
+"dow": "Mon",
+"rel": 0.4570541671155044
+},
+{
+"ch": "@goorfo",
+"hour": 16,
+"dow": "Sun",
+"rel": 0.007562272646438481
+},
+{
+"ch": "@polarranks",
+"hour": 23,
+"dow": "Tue",
+"rel": 0.004299425214485096
+},
+{
+"ch": "@polarranks",
+"hour": 0,
+"dow": "Sun",
+"rel": 0.20478051592578408
+},
+{
+"ch": "@polarranks",
+"hour": 1,
+"dow": "Thu",
+"rel": 0.537517364988671
+},
+{
+"ch": "@polarranks",
+"hour": 2,
+"dow": "Mon",
+"rel": 0.2263057373351227
+},
+{
+"ch": "@polarranks",
+"hour": 5,
+"dow": "Fri",
+"rel": 1.0817836911706054
+},
+{
+"ch": "@polarranks",
+"hour": 6,
+"dow": "Tue",
+"rel": 0.8625252707334282
+},
+{
+"ch": "@polarranks",
+"hour": 0,
+"dow": "Sat",
+"rel": 0.12384246294626049
+},
+{
+"ch": "@polarranks",
+"hour": 4,
+"dow": "Wed",
+"rel": 0.310498236729317
+},
+{
+"ch": "@polarranks",
+"hour": 3,
+"dow": "Sun",
+"rel": 2.0807254509524347
+},
+{
+"ch": "@polarranks",
+"hour": 4,
+"dow": "Thu",
+"rel": 1.0488758746442677
+},
+{
+"ch": "@polarranks",
+"hour": 5,
+"dow": "Mon",
+"rel": 0.18025475446745998
+},
+{
+"ch": "@polarranks",
+"hour": 3,
+"dow": "Tue",
+"rel": 0.09341143906884086
+},
+{
+"ch": "@polarranks",
+"hour": 23,
+"dow": "Fri",
+"rel": 0.07351260220006406
+},
+{
+"ch": "@polarranks",
+"hour": 2,
+"dow": "Wed",
+"rel": 0.5369073397442768
+},
+{
+"ch": "@polarranks",
+"hour": 0,
+"dow": "Sun",
+"rel": 0.2472870833418292
+},
+{
+"ch": "@polarranks",
+"hour": 3,
+"dow": "Thu",
+"rel": 0.04416849046113516
+},
+{
+"ch": "@polarranks",
+"hour": 7,
+"dow": "Sun",
+"rel": 0.030837043429153284
+},
+{
+"ch": "@polarranks",
+"hour": 6,
+"dow": "Tue",
+"rel": 2.513169925053068
+},
+{
+"ch": "@polarranks",
+"hour": 6,
+"dow": "Sat",
+"rel": 0.433749125100201
+},
+{
+"ch": "@polarranks",
+"hour": 0,
+"dow": "Wed",
+"rel": 0.4942937374812604
+},
+{
+"ch": "@polarranks",
+"hour": 2,
+"dow": "Sun",
+"rel": 4.1809816688934145
+},
+{
+"ch": "@polarranks",
+"hour": 23,
+"dow": "Wed",
+"rel": 9.72216154409875
+},
+{
+"ch": "@polarranks",
+"hour": 6,
+"dow": "Mon",
+"rel": 1.1978327382905214
+},
+{
+"ch": "@polarranks",
+"hour": 6,
+"dow": "Fri",
+"rel": 0.5367258732211551
+},
+{
+"ch": "@polarranks",
+"hour": 1,
+"dow": "Tue",
+"rel": 0.4314833619781717
+},
+{
+"ch": "@polarranks",
+"hour": 1,
+"dow": "Sat",
+"rel": 0.13038301544630254
+},
+{
+"ch": "@polarranks",
+"hour": 1,
+"dow": "Mon",
+"rel": 0.1599441322128815
+},
+{
+"ch": "@polarranks",
+"hour": 1,
+"dow": "Sat",
+"rel": 4.0560973721477405
+},
+{
+"ch": "@polarranks",
+"hour": 1,
+"dow": "Tue",
+"rel": 0.37808827900808156
+},
+{
+"ch": "@polarranks",
+"hour": 0,
+"dow": "Tue",
+"rel": 0.37155254884198724
+},
+{
+"ch": "@polarranks",
+"hour": 0,
+"dow": "Sat",
+"rel": 1.4361731341590602
+},
+{
+"ch": "@polarranks",
+"hour": 5,
+"dow": "Tue",
+"rel": 0.3008115306617359
+},
+{
+"ch": "@polarranks",
+"hour": 8,
+"dow": "Fri",
+"rel": 1.5042766501699165
+},
+{
+"ch": "@polarranks",
+"hour": 3,
+"dow": "Fri",
+"rel": 1.8807703091414836
+},
+{
+"ch": "@polarranks",
+"hour": 5,
+"dow": "Sun",
+"rel": 0.897091236304375
+},
+{
+"ch": "@polarranks",
+"hour": 4,
+"dow": "Wed",
+"rel": 4.447369807335703
+},
+{
+"ch": "@polarranks",
+"hour": 7,
+"dow": "Thu",
+"rel": 13.56686446447798
+},
+{
+"ch": "@polarranks",
+"hour": 3,
+"dow": "Tue",
+"rel": 0.13254237272144065
+},
+{
+"ch": "@polarranks",
+"hour": 4,
+"dow": "Tue",
+"rel": 4.057184913286311
+},
+{
+"ch": "@polarranks",
+"hour": 5,
+"dow": "Tue",
+"rel": 1.3792335309040058
+},
+{
+"ch": "@polarranks",
+"hour": 5,
+"dow": "Sun",
+"rel": 6.886688308812202
+},
+{
+"ch": "@polarranks",
+"hour": 4,
+"dow": "Mon",
+"rel": 4.909704679744872
+},
+{
+"ch": "@polarranks",
+"hour": 3,
+"dow": "Fri",
+"rel": 2.194924923336684
+},
+{
+"ch": "@polarranks",
+"hour": 6,
+"dow": "Mon",
+"rel": 11.87618762422424
+},
+{
+"ch": "@polarranks",
+"hour": 7,
+"dow": "Thu",
+"rel": 0.9945798538927164
+},
+{
+"ch": "@polarranks",
+"hour": 4,
+"dow": "Tue",
+"rel": 2.0503165469111666
+},
+{
+"ch": "@polarranks",
+"hour": 0,
+"dow": "Thu",
+"rel": 1.2547079738707076
+},
+{
+"ch": "@polarranks",
+"hour": 5,
+"dow": "Sun",
+"rel": 1.1008097904281808
+},
+{
+"ch": "@polarranks",
+"hour": 8,
+"dow": "Thu",
+"rel": 0.5865099715644789
+},
+{
+"ch": "@polarranks",
+"hour": 7,
+"dow": "Mon",
+"rel": 0.889737177034012
+},
+{
+"ch": "@polarranks",
+"hour": 4,
+"dow": "Tue",
+"rel": 0.46840388451579495
+},
+{
+"ch": "@polarranks",
+"hour": 23,
+"dow": "Sat",
+"rel": 0.8162196476666534
+},
+{
+"ch": "@polarranks",
+"hour": 6,
+"dow": "Wed",
+"rel": 0.43181474018706145
+},
+{
+"ch": "@polarranks",
+"hour": 4,
+"dow": "Wed",
+"rel": 0.7473009475519291
+},
+{
+"ch": "@polarranks",
+"hour": 7,
+"dow": "Sun",
+"rel": 4.185142818923614
+},
+{
+"ch": "@polarranks",
+"hour": 6,
+"dow": "Fri",
+"rel": 1.9772253747647999
+},
+{
+"ch": "@polarranks",
+"hour": 5,
+"dow": "Wed",
+"rel": 3.1323961826194804
+},
+{
+"ch": "@polarranks",
+"hour": 5,
+"dow": "Sun",
+"rel": 11.862830912355706
+},
+{
+"ch": "@polarranks",
+"hour": 3,
+"dow": "Fri",
+"rel": 0.6778723380389005
+},
+{
+"ch": "@polarranks",
+"hour": 1,
+"dow": "Wed",
+"rel": 11.390428369497082
+},
+{
+"ch": "@polarranks",
+"hour": 3,
+"dow": "Sun",
+"rel": 0.4224802741643616
+},
+{
+"ch": "@polarranks",
+"hour": 0,
+"dow": "Wed",
+"rel": 8.738701258456185
+},
+{
+"ch": "@polarranks",
+"hour": 3,
+"dow": "Fri",
+"rel": 0.6376943289195524
+},
+{
+"ch": "@polarranks",
+"hour": 6,
+"dow": "Sun",
+"rel": 2.354593868014502
+},
+{
+"ch": "@polarranks",
+"hour": 5,
+"dow": "Thu",
+"rel": 6.672447526847689
+},
+{
+"ch": "@polarranks",
+"hour": 6,
+"dow": "Tue",
+"rel": 39.53175525250448
+},
+{
+"ch": "@polarranks",
+"hour": 0,
+"dow": "Sun",
+"rel": 1.4568748896301422
+},
+{
+"ch": "@polarranks",
+"hour": 3,
+"dow": "Wed",
+"rel": 0.687485975263838
+},
+{
+"ch": "@polarranks",
+"hour": 1,
+"dow": "Mon",
+"rel": 1.1855179650547474
+},
+{
+"ch": "@polarranks",
+"hour": 1,
+"dow": "Sun",
+"rel": 0.5586060603423889
+},
+{
+"ch": "@polarranks",
+"hour": 3,
+"dow": "Fri",
+"rel": 2.0766898912715703
+},
+{
+"ch": "@polarranks",
+"hour": 0,
+"dow": "Sun",
+"rel": 1.0055360917887237
+},
+{
+"ch": "@polarranks",
+"hour": 22,
+"dow": "Thu",
+"rel": 0.9065326323406996
+},
+{
+"ch": "@polarranks",
+"hour": 0,
+"dow": "Sun",
+"rel": 5.306571651312338
+},
+{
+"ch": "@polarranks",
+"hour": 8,
+"dow": "Fri",
+"rel": 0.6509917051138597
+},
+{
+"ch": "@polarranks",
+"hour": 3,
+"dow": "Wed",
+"rel": 2.2542609120637445
+},
+{
+"ch": "@polarranks",
+"hour": 3,
+"dow": "Mon",
+"rel": 1.5078161384542397
+},
+{
+"ch": "@polarranks",
+"hour": 2,
+"dow": "Sat",
+"rel": 0.5729868891747462
+},
+{
+"ch": "@polarranks",
+"hour": 0,
+"dow": "Fri",
+"rel": 1.1882409064016954
+},
+{
+"ch": "@polarranks",
+"hour": 2,
+"dow": "Tue",
+"rel": 3.6404119761824925
+},
+{
+"ch": "@polarranks",
+"hour": 2,
+"dow": "Wed",
+"rel": 0.7527009132399747
+},
+{
+"ch": "@polarranks",
+"hour": 1,
+"dow": "Thu",
+"rel": 3.4720135587257275
+},
+{
+"ch": "@polarranks",
+"hour": 0,
+"dow": "Sun",
+"rel": 1.4965725523549527
+},
+{
+"ch": "@polarranks",
+"hour": 0,
+"dow": "Fri",
+"rel": 0.4461058316746514
+},
+{
+"ch": "@polarranks",
+"hour": 23,
+"dow": "Tue",
+"rel": 2.3012982718904214
+},
+{
+"ch": "@polarranks",
+"hour": 23,
+"dow": "Thu",
+"rel": 1.2146762072699935
+},
+{
+"ch": "@polarranks",
+"hour": 2,
+"dow": "Fri",
+"rel": 4.159328760467806
+},
+{
+"ch": "@polarranks",
+"hour": 1,
+"dow": "Wed",
+"rel": 2.2869123062240764
+},
+{
+"ch": "@polarranks",
+"hour": 21,
+"dow": "Tue",
+"rel": 0.7340086033582629
+},
+{
+"ch": "@polarranks",
+"hour": 11,
+"dow": "Sun",
+"rel": 0.03564270887480849
+},
+{
+"ch": "@polarranks",
+"hour": 20,
+"dow": "Fri",
+"rel": 0.0373999254320405
+},
+{
+"ch": "@polarranks",
+"hour": 14,
+"dow": "Thu",
+"rel": 0.046863650971210195
+},
+{
+"ch": "@rankingrawr",
+"hour": 2,
+"dow": "Tue",
+"rel": 0.04670979337342353
+},
+{
+"ch": "@rankingrawr",
+"hour": 4,
+"dow": "Mon",
+"rel": 0.043654403663513204
+},
+{
+"ch": "@rankingrawr",
+"hour": 2,
+"dow": "Sun",
+"rel": 0.08731373140391588
+},
+{
+"ch": "@rankingrawr",
+"hour": 2,
+"dow": "Sat",
+"rel": 0.0769608597438249
+},
+{
+"ch": "@rankingrawr",
+"hour": 2,
+"dow": "Fri",
+"rel": 0.12612284340819982
+},
+{
+"ch": "@rankingrawr",
+"hour": 2,
+"dow": "Tue",
+"rel": 0.11799319246370032
+},
+{
+"ch": "@rankingrawr",
+"hour": 3,
+"dow": "Mon",
+"rel": 0.1678273126234866
+},
+{
+"ch": "@rankingrawr",
+"hour": 3,
+"dow": "Sun",
+"rel": 0.14729883607132527
+},
+{
+"ch": "@rankingrawr",
+"hour": 2,
+"dow": "Sat",
+"rel": 0.16737183551121151
+},
+{
+"ch": "@rankingrawr",
+"hour": 2,
+"dow": "Fri",
+"rel": 0.15668905069952668
+},
+{
+"ch": "@rankingrawr",
+"hour": 3,
+"dow": "Thu",
+"rel": 0.11912080607138681
+},
+{
+"ch": "@rankingrawr",
+"hour": 3,
+"dow": "Wed",
+"rel": 0.11043473443837826
+},
+{
+"ch": "@rankingrawr",
+"hour": 2,
+"dow": "Tue",
+"rel": 0.12088116355936898
+},
+{
+"ch": "@rankingrawr",
+"hour": 2,
+"dow": "Mon",
+"rel": 0.12210725870484468
+},
+{
+"ch": "@rankingrawr",
+"hour": 3,
+"dow": "Sun",
+"rel": 5.380868730265223
+},
+{
+"ch": "@rankingrawr",
+"hour": 2,
+"dow": "Sat",
+"rel": 4.748811758695612
+},
+{
+"ch": "@rankingrawr",
+"hour": 3,
+"dow": "Fri",
+"rel": 1.297619824333557
+},
+{
+"ch": "@rankingrawr",
+"hour": 2,
+"dow": "Thu",
+"rel": 0.3421814891639533
+},
+{
+"ch": "@rankingrawr",
+"hour": 2,
+"dow": "Wed",
+"rel": 0.3744711233665914
+},
+{
+"ch": "@rankingrawr",
+"hour": 5,
+"dow": "Tue",
+"rel": 0.136135953762918
+},
+{
+"ch": "@rankingrawr",
+"hour": 6,
+"dow": "Mon",
+"rel": 0.2315399434962177
+},
+{
+"ch": "@rankingrawr",
+"hour": 3,
+"dow": "Sun",
+"rel": 0.7295980106729366
+},
+{
+"ch": "@rankingrawr",
+"hour": 2,
+"dow": "Sat",
+"rel": 19.181025069706465
+},
+{
+"ch": "@rankingrawr",
+"hour": 2,
+"dow": "Fri",
+"rel": 0.16696067509094153
+},
+{
+"ch": "@rankingrawr",
+"hour": 6,
+"dow": "Thu",
+"rel": 0.2396228157102673
+},
+{
+"ch": "@rankingrawr",
+"hour": 3,
+"dow": "Wed",
+"rel": 0.3538121587768593
+},
+{
+"ch": "@rankingrawr",
+"hour": 7,
+"dow": "Tue",
+"rel": 0.20261591584752595
+},
+{
+"ch": "@rankingrawr",
+"hour": 2,
+"dow": "Tue",
+"rel": 0.1652027796414041
+},
+{
+"ch": "@rankingrawr",
+"hour": 2,
+"dow": "Sun",
+"rel": 8.725774464968271
+},
+{
+"ch": "@rankingrawr",
+"hour": 2,
+"dow": "Sat",
+"rel": 5.2982353339447394
+},
+{
+"ch": "@rankingrawr",
+"hour": 6,
+"dow": "Fri",
+"rel": 0.2133725618125527
+},
+{
+"ch": "@rankingrawr",
+"hour": 2,
+"dow": "Fri",
+"rel": 0.4264595271655167
+},
+{
+"ch": "@rankingrawr",
+"hour": 7,
+"dow": "Thu",
+"rel": 0.2803917103165566
+},
+{
+"ch": "@rankingrawr",
+"hour": 3,
+"dow": "Thu",
+"rel": 0.3046255547280371
+},
+{
+"ch": "@rankingrawr",
+"hour": 6,
+"dow": "Wed",
+"rel": 0.49151150695218104
+},
+{
+"ch": "@rankingrawr",
+"hour": 3,
+"dow": "Wed",
+"rel": 5.5334683351080525
+},
+{
+"ch": "@rankingrawr",
+"hour": 9,
+"dow": "Tue",
+"rel": 5.018757039891178
+},
+{
+"ch": "@rankingrawr",
+"hour": 5,
+"dow": "Tue",
+"rel": 8.800940498685886
+},
+{
+"ch": "@rankingrawr",
+"hour": 7,
+"dow": "Mon",
+"rel": 0.34352576215477604
+},
+{
+"ch": "@rankingrawr",
+"hour": 10,
+"dow": "Sun",
+"rel": 0.34086183655757785
+},
+{
+"ch": "@rankingrawr",
+"hour": 2,
+"dow": "Sun",
+"rel": 0.7067453698289499
+},
+{
+"ch": "@rankingrawr",
+"hour": 3,
+"dow": "Sat",
+"rel": 0.22965156000910955
+},
+{
+"ch": "@rankingrawr",
+"hour": 8,
+"dow": "Fri",
+"rel": 9.115756430536663
+},
+{
+"ch": "@rankingrawr",
+"hour": 4,
+"dow": "Fri",
+"rel": 7.19758474028572
+},
+{
+"ch": "@rankingrawr",
+"hour": 8,
+"dow": "Thu",
+"rel": 5.705124117513095
+},
+{
+"ch": "@rankingrawr",
+"hour": 2,
+"dow": "Thu",
+"rel": 0.3054651098376901
+},
+{
+"ch": "@rankingrawr",
+"hour": 8,
+"dow": "Wed",
+"rel": 2.793844903888174
+},
+{
+"ch": "@rankingrawr",
+"hour": 3,
+"dow": "Wed",
+"rel": 0.5125250050779543
+},
+{
+"ch": "@rankingrawr",
+"hour": 9,
+"dow": "Tue",
+"rel": 0.47294773707891447
+},
+{
+"ch": "@rankingrawr",
+"hour": 4,
+"dow": "Tue",
+"rel": 0.2618131682126216
+},
+{
+"ch": "@rankingrawr",
+"hour": 9,
+"dow": "Mon",
+"rel": 0.33606824770568794
+},
+{
+"ch": "@rankingrawr",
+"hour": 10,
+"dow": "Sun",
+"rel": 0.21853545643115216
+},
+{
+"ch": "@rankingrawr",
+"hour": 5,
+"dow": "Sun",
+"rel": 12.946269704001429
+},
+{
+"ch": "@rankingrawr",
+"hour": 6,
+"dow": "Sat",
+"rel": 0.38285190223245336
+},
+{
+"ch": "@rankingrawr",
+"hour": 4,
+"dow": "Fri",
+"rel": 9.558110877901358
+},
+{
+"ch": "@rankingrawr",
+"hour": 7,
+"dow": "Thu",
+"rel": 4.905503271433584
+},
+{
+"ch": "@rankingrawr",
+"hour": 3,
+"dow": "Thu",
+"rel": 2.636697914037928
+},
+{
+"ch": "@rankingrawr",
+"hour": 5,
+"dow": "Wed",
+"rel": 2.1983836717610346
+},
+{
+"ch": "@rankingrawr",
+"hour": 11,
+"dow": "Tue",
+"rel": 0.5319406402530975
+},
+{
+"ch": "@rankingrawr",
+"hour": 5,
+"dow": "Tue",
+"rel": 0.3668264939957037
+},
+{
+"ch": "@rankingrawr",
+"hour": 10,
+"dow": "Mon",
+"rel": 2.97510017418922
+},
+{
+"ch": "@rankingrawr",
+"hour": 5,
+"dow": "Mon",
+"rel": 23.398819452565753
+},
+{
+"ch": "@rankingrawr",
+"hour": 10,
+"dow": "Sun",
+"rel": 0.3763127281232496
+},
+{
+"ch": "@rankingrawr",
+"hour": 5,
+"dow": "Sun",
+"rel": 0.37906528710445814
+},
+{
+"ch": "@rankingrawr",
+"hour": 9,
+"dow": "Sat",
+"rel": 1.0015178467011763
+},
+{
+"ch": "@rankingrawr",
+"hour": 10,
+"dow": "Fri",
+"rel": 1.000725070321973
+},
+{
+"ch": "@rankingrawr",
+"hour": 3,
+"dow": "Fri",
+"rel": 1.2170102236146418
+},
+{
+"ch": "@rankingrawr",
+"hour": 11,
+"dow": "Thu",
+"rel": 1.238471812737356
+},
+{
+"ch": "@rankingrawr",
+"hour": 5,
+"dow": "Thu",
+"rel": 6.708569740316495
+},
+{
+"ch": "@rankingrawr",
+"hour": 10,
+"dow": "Wed",
+"rel": 0.33553152332473674
+},
+{
+"ch": "@rankingrawr",
+"hour": 4,
+"dow": "Wed",
+"rel": 0.38352650076630945
+},
+{
+"ch": "@rankingrawr",
+"hour": 10,
+"dow": "Tue",
+"rel": 0.7203801387358664
+},
+{
+"ch": "@rankingrawr",
+"hour": 6,
+"dow": "Tue",
+"rel": 0.8871733952125662
+},
+{
+"ch": "@rankingrawr",
+"hour": 10,
+"dow": "Mon",
+"rel": 4.8315633328614425
+},
+{
+"ch": "@rankingrawr",
+"hour": 6,
+"dow": "Mon",
+"rel": 1.45648777905667
+},
+{
+"ch": "@rankingrawr",
+"hour": 11,
+"dow": "Sun",
+"rel": 1.3661654366732936
+},
+{
+"ch": "@rankingrawr",
+"hour": 4,
+"dow": "Sun",
+"rel": 11.042318747807247
+},
+{
+"ch": "@rankingrawr",
+"hour": 10,
+"dow": "Sat",
+"rel": 1.287468839825934
+},
+{
+"ch": "@rankingrawr",
+"hour": 5,
+"dow": "Sat",
+"rel": 23.3498568940154
+},
+{
+"ch": "@rankingrawr",
+"hour": 9,
+"dow": "Fri",
+"rel": 3.395283965359119
+},
+{
+"ch": "@rankingrawr",
+"hour": 5,
+"dow": "Fri",
+"rel": 3.1749167523250876
+},
+{
+"ch": "@rankingrawr",
+"hour": 9,
+"dow": "Thu",
+"rel": 5.060944068641632
+},
+{
+"ch": "@rankingrawr",
+"hour": 5,
+"dow": "Thu",
+"rel": 1.2426449679011737
+},
+{
+"ch": "@rankingrawr",
+"hour": 9,
+"dow": "Wed",
+"rel": 0.7046378649202607
+},
+{
+"ch": "@rankingrawr",
+"hour": 4,
+"dow": "Wed",
+"rel": 0.78968405891658
+},
+{
+"ch": "@rankingrawr",
+"hour": 10,
+"dow": "Tue",
+"rel": 6.338385025882179
+},
+{
+"ch": "@rankingrawr",
+"hour": 5,
+"dow": "Tue",
+"rel": 0.9249189066087267
+},
+{
+"ch": "@rankingrawr",
+"hour": 9,
+"dow": "Mon",
+"rel": 6.70354964392769
+},
+{
+"ch": "@rankingrawr",
+"hour": 5,
+"dow": "Mon",
+"rel": 2.4429576467836545
+},
+{
+"ch": "@rankingrawr",
+"hour": 8,
+"dow": "Sun",
+"rel": 5.44685382262244
+},
+{
+"ch": "@rankingrawr",
+"hour": 3,
+"dow": "Sun",
+"rel": 25.230310155293076
+},
+{
+"ch": "@rankingrawr",
+"hour": 8,
+"dow": "Sat",
+"rel": 2.4913785568761657
+},
+{
+"ch": "@rankingrawr",
+"hour": 2,
+"dow": "Sat",
+"rel": 0.7216702468809051
+},
+{
+"ch": "@rankingrawr",
+"hour": 8,
+"dow": "Fri",
+"rel": 0.4894729391199444
+},
+{
+"ch": "@rankingrawr",
+"hour": 3,
+"dow": "Fri",
+"rel": 50.8759686582506
+},
+{
+"ch": "@rankingrawr",
+"hour": 9,
+"dow": "Thu",
+"rel": 114.47060633851798
+},
+{
+"ch": "@rankingrawr",
+"hour": 3,
+"dow": "Thu",
+"rel": 2.1446472206663505
+},
+{
+"ch": "@rankingrawr",
+"hour": 3,
+"dow": "Wed",
+"rel": 0.3684169708309995
+},
+{
+"ch": "@rankingrawr",
+"hour": 6,
+"dow": "Tue",
+"rel": 145.18163565524077
+},
+{
+"ch": "@rankingrawr",
+"hour": 2,
+"dow": "Tue",
+"rel": 0.8237808293376501
+},
+{
+"ch": "@rankingrawr",
+"hour": 8,
+"dow": "Mon",
+"rel": 0.3083456948180246
+},
+{
+"ch": "@rankingrawr",
+"hour": 5,
+"dow": "Mon",
+"rel": 0.41740168772735387
+},
+{
+"ch": "@rankingrawr",
+"hour": 8,
+"dow": "Sun",
+"rel": 5.764991044335157
+},
+{
+"ch": "@rankingrawr",
+"hour": 3,
+"dow": "Sun",
+"rel": 0.9038044649067195
+},
+{
+"ch": "@rankingrawr",
+"hour": 8,
+"dow": "Sat",
+"rel": 56.5317313669853
+},
+{
+"ch": "@rankingrawr",
+"hour": 2,
+"dow": "Sat",
+"rel": 6.275952655000708
+},
+{
+"ch": "@rankingrawr",
+"hour": 8,
+"dow": "Fri",
+"rel": 2.6038321628392227
+},
+{
+"ch": "@rankingrawr",
+"hour": 2,
+"dow": "Fri",
+"rel": 0.6086725304215626
+},
+{
+"ch": "@rankingrawr",
+"hour": 8,
+"dow": "Thu",
+"rel": 4.490484836920729
+},
+{
+"ch": "@rankingrawr",
+"hour": 4,
+"dow": "Thu",
+"rel": 6.361018545304585
+},
+{
+"ch": "@rankingrawr",
+"hour": 2,
+"dow": "Wed",
+"rel": 0.3844497651830833
+},
+{
+"ch": "@rankingrawr",
+"hour": 5,
+"dow": "Tue",
+"rel": 0.645440612555165
+},
+{
+"ch": "@rankingrawr",
+"hour": 5,
+"dow": "Mon",
+"rel": 1.699946450663827
+},
+{
+"ch": "@rankingrawr",
+"hour": 3,
+"dow": "Sun",
+"rel": 0.46197196969230675
+},
+{
+"ch": "@rankingrawr",
+"hour": 5,
+"dow": "Sat",
+"rel": 0.5379652483273526
+},
+{
+"ch": "@rankingrawr",
+"hour": 3,
+"dow": "Fri",
+"rel": 0.2330664073319505
+},
+{
+"ch": "@rankingrawr",
+"hour": 4,
+"dow": "Thu",
+"rel": 0.3534650113561523
+},
+{
+"ch": "@rankingrawr",
+"hour": 5,
+"dow": "Wed",
+"rel": 0.29590009047991284
+},
+{
+"ch": "@rankingrawr",
+"hour": 5,
+"dow": "Tue",
+"rel": 0.25482097902958756
+},
+{
+"ch": "@rankingrawr",
+"hour": 6,
+"dow": "Mon",
+"rel": 0.21062246486978894
+},
+{
+"ch": "@rankingrawr",
+"hour": 5,
+"dow": "Sun",
+"rel": 0.2611755002554365
+},
+{
+"ch": "@rankingrawr",
+"hour": 3,
+"dow": "Sat",
+"rel": 0.23882511525417469
+},
+{
+"ch": "@rankingrawr",
+"hour": 5,
+"dow": "Fri",
+"rel": 0.3112878307594773
+},
+{
+"ch": "@rankingrawr",
+"hour": 5,
+"dow": "Thu",
+"rel": 0.34595333206128015
+},
+{
+"ch": "@rankingrawr",
+"hour": 4,
+"dow": "Mon",
+"rel": 0.25460924372334076
+},
+{
+"ch": "@rankingrawr",
+"hour": 2,
+"dow": "Sat",
+"rel": 0.37191306542251656
+},
+{
+"ch": "@rankingrawr",
+"hour": 2,
+"dow": "Wed",
+"rel": 6.6438624459120925
+},
+{
+"ch": "@rankingrawr",
+"hour": 2,
+"dow": "Tue",
+"rel": 9.759348052219835
+},
+{
+"ch": "@rankingrawr",
+"hour": 3,
+"dow": "Wed",
+"rel": 10.8614377073498
+},
+{
+"ch": "@rankingrawr",
+"hour": 3,
+"dow": "Fri",
+"rel": 8.512960785882672
+},
+{
+"ch": "@rankingrawr",
+"hour": 3,
+"dow": "Wed",
+"rel": 35.486381849852584
+},
+{
+"ch": "@rankingrawr",
+"hour": 3,
+"dow": "Sat",
+"rel": 122.95500255436488
+},
+{
+"ch": "@rankingrawr",
+"hour": 3,
+"dow": "Wed",
+"rel": 81.38592329519226
+},
+{
+"ch": "@rankingrawr",
+"hour": 3,
+"dow": "Mon",
+"rel": 51.75352533129805
+},
+{
+"ch": "@rankingrawr",
+"hour": 3,
+"dow": "Sun",
+"rel": 70.61096222617516
+},
+{
+"ch": "@rankingrawr",
+"hour": 3,
+"dow": "Sat",
+"rel": 45.724035034807066
+},
+{
+"ch": "@rankingrawr",
+"hour": 3,
+"dow": "Sat",
+"rel": 59.81753340678415
+},
+{
+"ch": "@rankingrawr",
+"hour": 3,
+"dow": "Tue",
+"rel": 19.07868551767436
+},
+{
+"ch": "@rankingrawr",
+"hour": 3,
+"dow": "Wed",
+"rel": 31.20845217798076
+},
+{
+"ch": "@rankingrawr",
+"hour": 3,
+"dow": "Tue",
+"rel": 111.7414465706882
+},
+{
+"ch": "@rankingrawr",
+"hour": 3,
+"dow": "Sun",
+"rel": 7.477491429028665
+},
+{
+"ch": "@rankingrawr",
+"hour": 3,
+"dow": "Tue",
+"rel": 123.39680058104108
+},
+{
+"ch": "@rankingrawr",
+"hour": 3,
+"dow": "Sun",
+"rel": 8.499498359666886
+},
+{
+"ch": "@rankingrawr",
+"hour": 3,
+"dow": "Sat",
+"rel": 11.601302418337262
+},
+{
+"ch": "@rankingrawr",
+"hour": 3,
+"dow": "Fri",
+"rel": 15.812648722509802
+},
+{
+"ch": "@rankingrawr",
+"hour": 3,
+"dow": "Sun",
+"rel": 33.24343774428038
+},
+{
+"ch": "@rankingrawr",
+"hour": 3,
+"dow": "Thu",
+"rel": 19.527670234570714
+},
+{
+"ch": "@rankingrawr",
+"hour": 3,
+"dow": "Sun",
+"rel": 19.613373792831776
+},
+{
+"ch": "@rankingrawr",
+"hour": 2,
+"dow": "Mon",
+"rel": 75.90490622711074
+},
+{
+"ch": "@rankingrawr",
+"hour": 3,
+"dow": "Sun",
+"rel": 39.294079413050035
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Wed",
+"rel": 0.634167285555143
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Fri",
+"rel": 0.6634561826958782
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Wed",
+"rel": 0.05929725213516524
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Mon",
+"rel": 0.040614556256962496
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Sat",
+"rel": 1.197409951726699
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Tue",
+"rel": 0.6837170441886372
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Sat",
+"rel": 0.6538247307835128
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Wed",
+"rel": 0.7448245451169699
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Sun",
+"rel": 0.691886372075752
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Sat",
+"rel": 0.28425547716301525
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Fri",
+"rel": 0.5828536947642035
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Thu",
+"rel": 0.4796695135536576
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Tue",
+"rel": 0.8913154474563684
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Mon",
+"rel": 0.6428471964352024
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Sat",
+"rel": 0.6695135536576309
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Fri",
+"rel": 0.12940958039361308
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Thu",
+"rel": 1.652710731526179
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Wed",
+"rel": 0.651364649090234
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Tue",
+"rel": 0.26353044931303377
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Mon",
+"rel": 0.5699730783512811
+},
+{
+"ch": "@WaveRanks",
+"hour": 22,
+"dow": "Wed",
+"rel": 0.5289407723728184
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Sun",
+"rel": 0.44258262161158557
+},
+{
+"ch": "@WaveRanks",
+"hour": 22,
+"dow": "Wed",
+"rel": 0.27084106943928704
+},
+{
+"ch": "@WaveRanks",
+"hour": 22,
+"dow": "Mon",
+"rel": 0.20130894912736724
+},
+{
+"ch": "@WaveRanks",
+"hour": 23,
+"dow": "Fri",
+"rel": 0.6288757890828073
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Thu",
+"rel": 0.059204418863720756
+},
+{
+"ch": "@WaveRanks",
+"hour": 18,
+"dow": "Sun",
+"rel": 0.24774879316747123
+},
+{
+"ch": "@WaveRanks",
+"hour": 20,
+"dow": "Thu",
+"rel": 0.5758911994058671
+},
+{
+"ch": "@WaveRanks",
+"hour": 20,
+"dow": "Wed",
+"rel": 0.5668167471221686
+},
+{
+"ch": "@WaveRanks",
+"hour": 18,
+"dow": "Tue",
+"rel": 0.657862978091348
+},
+{
+"ch": "@WaveRanks",
+"hour": 18,
+"dow": "Mon",
+"rel": 0.7088980690679539
+},
+{
+"ch": "@WaveRanks",
+"hour": 0,
+"dow": "Sun",
+"rel": 0.8812894541403639
+},
+{
+"ch": "@WaveRanks",
+"hour": 22,
+"dow": "Fri",
+"rel": 0.5851049015967322
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Wed",
+"rel": 0.18285833642777571
+},
+{
+"ch": "@WaveRanks",
+"hour": 20,
+"dow": "Mon",
+"rel": 0.1699313033791311
+},
+{
+"ch": "@WaveRanks",
+"hour": 16,
+"dow": "Sun",
+"rel": 0.22841626438915708
+},
+{
+"ch": "@WaveRanks",
+"hour": 13,
+"dow": "Sat",
+"rel": 0.6027896398069068
+},
+{
+"ch": "@WaveRanks",
+"hour": 0,
+"dow": "Sat",
+"rel": 0.7054168213887857
+},
+{
+"ch": "@WaveRanks",
+"hour": 13,
+"dow": "Fri",
+"rel": 0.6335174526550316
+},
+{
+"ch": "@WaveRanks",
+"hour": 1,
+"dow": "Fri",
+"rel": 0.8714491273672484
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Tue",
+"rel": 0.04509376160415893
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Sat",
+"rel": 0.15865206089862607
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Sun",
+"rel": 0.7470989602673598
+},
+{
+"ch": "@WaveRanks",
+"hour": 20,
+"dow": "Sun",
+"rel": 0.7283234311177126
+},
+{
+"ch": "@WaveRanks",
+"hour": 23,
+"dow": "Sat",
+"rel": 0.4683902710731526
+},
+{
+"ch": "@WaveRanks",
+"hour": 23,
+"dow": "Mon",
+"rel": 1.7334292610471593
+},
+{
+"ch": "@WaveRanks",
+"hour": 22,
+"dow": "Sun",
+"rel": 1.008795952469365
+},
+{
+"ch": "@WaveRanks",
+"hour": 22,
+"dow": "Thu",
+"rel": 1.2544792053471965
+},
+{
+"ch": "@WaveRanks",
+"hour": 23,
+"dow": "Thu",
+"rel": 0.8251949498700334
+},
+{
+"ch": "@WaveRanks",
+"hour": 23,
+"dow": "Mon",
+"rel": 0.9603369847753435
+},
+{
+"ch": "@WaveRanks",
+"hour": 22,
+"dow": "Fri",
+"rel": 0.9539314890456739
+},
+{
+"ch": "@WaveRanks",
+"hour": 22,
+"dow": "Wed",
+"rel": 1.5409858893427404
+},
+{
+"ch": "@WaveRanks",
+"hour": 23,
+"dow": "Sat",
+"rel": 0.6207760861492759
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Tue",
+"rel": 1.174526550315633
+},
+{
+"ch": "@WaveRanks",
+"hour": 22,
+"dow": "Sun",
+"rel": 1.147163943557371
+},
+{
+"ch": "@WaveRanks",
+"hour": 22,
+"dow": "Thu",
+"rel": 0.5453722614184924
+},
+{
+"ch": "@WaveRanks",
+"hour": 23,
+"dow": "Tue",
+"rel": 1.1329836613442257
+},
+{
+"ch": "@WaveRanks",
+"hour": 22,
+"dow": "Tue",
+"rel": 2.8235007426661713
+},
+{
+"ch": "@WaveRanks",
+"hour": 22,
+"dow": "Mon",
+"rel": 0.8527200148533234
+},
+{
+"ch": "@WaveRanks",
+"hour": 22,
+"dow": "Sat",
+"rel": 0.8661808392127739
+},
+{
+"ch": "@WaveRanks",
+"hour": 22,
+"dow": "Fri",
+"rel": 0.9099053100631266
+},
+{
+"ch": "@WaveRanks",
+"hour": 22,
+"dow": "Sun",
+"rel": 0.975909766060156
+},
+{
+"ch": "@WaveRanks",
+"hour": 22,
+"dow": "Thu",
+"rel": 1.2156052729298181
+},
+{
+"ch": "@WaveRanks",
+"hour": 22,
+"dow": "Wed",
+"rel": 1.000023208317861
+},
+{
+"ch": "@WaveRanks",
+"hour": 22,
+"dow": "Tue",
+"rel": 3.1216580022279987
+},
+{
+"ch": "@WaveRanks",
+"hour": 20,
+"dow": "Mon",
+"rel": 1.457551986632009
+},
+{
+"ch": "@WaveRanks",
+"hour": 20,
+"dow": "Sun",
+"rel": 2.181187337541775
+},
+{
+"ch": "@WaveRanks",
+"hour": 19,
+"dow": "Sat",
+"rel": 1.620056628295581
+},
+{
+"ch": "@WaveRanks",
+"hour": 19,
+"dow": "Fri",
+"rel": 1.1044142220571853
+},
+{
+"ch": "@WaveRanks",
+"hour": 19,
+"dow": "Tue",
+"rel": 1.0362281841812107
+},
+{
+"ch": "@WaveRanks",
+"hour": 19,
+"dow": "Sat",
+"rel": 1.3894587820274786
+},
+{
+"ch": "@WaveRanks",
+"hour": 19,
+"dow": "Thu",
+"rel": 1.1718808020794653
+},
+{
+"ch": "@WaveRanks",
+"hour": 19,
+"dow": "Tue",
+"rel": 19.348635350909767
+},
+{
+"ch": "@WaveRanks",
+"hour": 19,
+"dow": "Sat",
+"rel": 1.1443325287783142
+},
+{
+"ch": "@WaveRanks",
+"hour": 19,
+"dow": "Thu",
+"rel": 2.5252738581507614
+},
+{
+"ch": "@WaveRanks",
+"hour": 20,
+"dow": "Sat",
+"rel": 1.9892313405124395
+},
+{
+"ch": "@WaveRanks",
+"hour": 19,
+"dow": "Wed",
+"rel": 1.1451912365391756
+},
+{
+"ch": "@WaveRanks",
+"hour": 19,
+"dow": "Tue",
+"rel": 1.3007565911622725
+},
+{
+"ch": "@WaveRanks",
+"hour": 19,
+"dow": "Mon",
+"rel": 1.1900993316004456
+},
+{
+"ch": "@WaveRanks",
+"hour": 19,
+"dow": "Sun",
+"rel": 1.151944857036762
+},
+{
+"ch": "@WaveRanks",
+"hour": 19,
+"dow": "Sat",
+"rel": 1.488326216115856
+},
+{
+"ch": "@WaveRanks",
+"hour": 19,
+"dow": "Fri",
+"rel": 1.6889853323431119
+},
+{
+"ch": "@WaveRanks",
+"hour": 20,
+"dow": "Thu",
+"rel": 1.6329604530263646
+},
+{
+"ch": "@WaveRanks",
+"hour": 19,
+"dow": "Tue",
+"rel": 5.573570367619755
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Mon",
+"rel": 1.1237235425176384
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Sun",
+"rel": 1.2516477905681396
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Sat",
+"rel": 0.560202376531749
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Fri",
+"rel": 1.336590233939844
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Wed",
+"rel": 1.674317675454883
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Mon",
+"rel": 1.23261696992202
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Sat",
+"rel": 1.197409951726699
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Fri",
+"rel": 0.8973031934645377
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Thu",
+"rel": 1.0830857779428147
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Wed",
+"rel": 1.1563544374303751
+},
+{
+"ch": "@WaveRanks",
+"hour": 23,
+"dow": "Tue",
+"rel": 0.5260861492759005
+},
+{
+"ch": "@WaveRanks",
+"hour": 20,
+"dow": "Mon",
+"rel": 1.5184970293353137
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Sun",
+"rel": 1.3881126995915336
+},
+{
+"ch": "@WaveRanks",
+"hour": 20,
+"dow": "Sat",
+"rel": 18.696504827330116
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Fri",
+"rel": 1.2649925733382845
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Thu",
+"rel": 1.5706229112513925
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Wed",
+"rel": 1.2958364277757148
+},
+{
+"ch": "@WaveRanks",
+"hour": 22,
+"dow": "Tue",
+"rel": 1.493501670998886
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Mon",
+"rel": 4.546950427033049
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Sun",
+"rel": 2.4038015224656517
+},
+{
+"ch": "@WaveRanks",
+"hour": 23,
+"dow": "Sat",
+"rel": 1.704302822131452
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Fri",
+"rel": 1.2060898626067582
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Thu",
+"rel": 1.6447502784998143
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Wed",
+"rel": 1.1568418121054587
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Tue",
+"rel": 2.4108104344597105
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Mon",
+"rel": 1.0582064611956925
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Sun",
+"rel": 1.196667285555143
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Sat",
+"rel": 2.2189008540660975
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Fri",
+"rel": 1203.0264806906796
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Thu",
+"rel": 1.0765178239881172
+},
+{
+"ch": "@WaveRanks",
+"hour": 23,
+"dow": "Wed",
+"rel": 0.9696667285555143
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Sun",
+"rel": 13.311223542517638
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Sat",
+"rel": 0.5324220200519866
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Fri",
+"rel": 3.6086845525436315
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Thu",
+"rel": 0.4931535462309692
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Wed",
+"rel": 1.1512950241366506
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Tue",
+"rel": 0.8700102116598589
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Mon",
+"rel": 1.2437801708132195
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Sun",
+"rel": 0.6787968808020794
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Sat",
+"rel": 386.4489184923877
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Fri",
+"rel": 0.9904149647233569
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Thu",
+"rel": 1.0267127738581507
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Wed",
+"rel": 0.8616320089119941
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Tue",
+"rel": 32.79449034533977
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Mon",
+"rel": 0.9938497957668028
+},
+{
+"ch": "@WaveRanks",
+"hour": 22,
+"dow": "Sat",
+"rel": 2.8355226513182323
+},
+{
+"ch": "@WaveRanks",
+"hour": 22,
+"dow": "Thu",
+"rel": 0.33139157073895287
+},
+{
+"ch": "@WaveRanks",
+"hour": 22,
+"dow": "Wed",
+"rel": 0.4940354623096918
+},
+{
+"ch": "@WaveRanks",
+"hour": 22,
+"dow": "Mon",
+"rel": 0.7683809877460082
+},
+{
+"ch": "@WaveRanks",
+"hour": 21,
+"dow": "Sun",
+"rel": 0.8552033048644634
+},
+{
+"ch": "@WaveRanks",
+"hour": 22,
+"dow": "Sat",
+"rel": 78.5361121425919
+},
+{
+"ch": "@WaveRanks",
+"hour": 22,
+"dow": "Fri",
+"rel": 0.6728787597474934
+},
+{
+"ch": "@WaveRanks",
+"hour": 22,
+"dow": "Thu",
+"rel": 1.0111632008911995
+},
+{
+"ch": "@xiroranks",
+"hour": 19,
+"dow": "Thu",
+"rel": 1.4589183183802112
+},
+{
+"ch": "@xiroranks",
+"hour": 19,
+"dow": "Thu",
+"rel": 0.10053641551865963
+},
+{
+"ch": "@xiroranks",
+"hour": 18,
+"dow": "Wed",
+"rel": 0.07955937231541452
+},
+{
+"ch": "@xiroranks",
+"hour": 18,
+"dow": "Wed",
+"rel": 0.07751213364242734
+},
+{
+"ch": "@xiroranks",
+"hour": 8,
+"dow": "Tue",
+"rel": 1.0829734126861084
+},
+{
+"ch": "@xiroranks",
+"hour": 6,
+"dow": "Mon",
+"rel": 0.18981387329942054
+},
+{
+"ch": "@xiroranks",
+"hour": 4,
+"dow": "Sat",
+"rel": 1.600405663096035
+},
+{
+"ch": "@xiroranks",
+"hour": 2,
+"dow": "Sat",
+"rel": 0.121160301786167
+},
+{
+"ch": "@xiroranks",
+"hour": 9,
+"dow": "Thu",
+"rel": 1.4502802228468143
+},
+{
+"ch": "@xiroranks",
+"hour": 20,
+"dow": "Wed",
+"rel": 0.47586004771380475
+},
+{
+"ch": "@xiroranks",
+"hour": 9,
+"dow": "Wed",
+"rel": 3.3440294590793935
+},
+{
+"ch": "@xiroranks",
+"hour": 9,
+"dow": "Tue",
+"rel": 0.12668051631589602
+},
+{
+"ch": "@xiroranks",
+"hour": 9,
+"dow": "Mon",
+"rel": 1.5449251416731569
+},
+{
+"ch": "@xiroranks",
+"hour": 4,
+"dow": "Sun",
+"rel": 0.5158512518490012
+},
+{
+"ch": "@xiroranks",
+"hour": 6,
+"dow": "Sat",
+"rel": 0.7619379127763926
+},
+{
+"ch": "@xiroranks",
+"hour": 7,
+"dow": "Thu",
+"rel": 0.25104009163385127
+},
+{
+"ch": "@xiroranks",
+"hour": 6,
+"dow": "Mon",
+"rel": 0.2659183949849435
+},
+{
+"ch": "@xiroranks",
+"hour": 8,
+"dow": "Sat",
+"rel": 0.19016281241507363
+},
+{
+"ch": "@xiroranks",
+"hour": 4,
+"dow": "Fri",
+"rel": 0.11555652882070662
+},
+{
+"ch": "@xiroranks",
+"hour": 4,
+"dow": "Thu",
+"rel": 2.9910607293135305
+},
+{
+"ch": "@xiroranks",
+"hour": 3,
+"dow": "Tue",
+"rel": 0.6930108669284603
+},
+{
+"ch": "@xiroranks",
+"hour": 5,
+"dow": "Mon",
+"rel": 0.46014205618045156
+},
+{
+"ch": "@xiroranks",
+"hour": 6,
+"dow": "Sat",
+"rel": 0.12089811297009315
+},
+{
+"ch": "@xiroranks",
+"hour": 5,
+"dow": "Wed",
+"rel": 0.18475180522699625
+},
+{
+"ch": "@xiroranks",
+"hour": 5,
+"dow": "Tue",
+"rel": 8.220187991661028
+},
+{
+"ch": "@xiroranks",
+"hour": 6,
+"dow": "Mon",
+"rel": 0.6447310763512072
+},
+{
+"ch": "@xiroranks",
+"hour": 6,
+"dow": "Sun",
+"rel": 0.4654310885714859
+},
+{
+"ch": "@xiroranks",
+"hour": 4,
+"dow": "Sat",
+"rel": 1.8112361359113867
+},
+{
+"ch": "@xiroranks",
+"hour": 5,
+"dow": "Thu",
+"rel": 38.698278354238525
+},
+{
+"ch": "@xiroranks",
+"hour": 5,
+"dow": "Wed",
+"rel": 0.7296148195502573
+},
+{
+"ch": "@xiroranks",
+"hour": 22,
+"dow": "Mon",
+"rel": 0.15566036015167736
+},
+{
+"ch": "@xiroranks",
+"hour": 5,
+"dow": "Sun",
+"rel": 0.7911677479485435
+},
+{
+"ch": "@xiroranks",
+"hour": 7,
+"dow": "Sat",
+"rel": 1.617874163959662
+},
+{
+"ch": "@xiroranks",
+"hour": 5,
+"dow": "Thu",
+"rel": 5.969971400899923
+},
+{
+"ch": "@xiroranks",
+"hour": 7,
+"dow": "Wed",
+"rel": 12.321140033450733
+},
+{
+"ch": "@xiroranks",
+"hour": 3,
+"dow": "Mon",
+"rel": 0.3295372572587544
+},
+{
+"ch": "@xiroranks",
+"hour": 6,
+"dow": "Sun",
+"rel": 0.31664189932314246
+},
+{
+"ch": "@xiroranks",
+"hour": 8,
+"dow": "Fri",
+"rel": 3.7791312293782795
+},
+{
+"ch": "@xiroranks",
+"hour": 7,
+"dow": "Mon",
+"rel": 0.1307439869844912
+},
+{
+"ch": "@xiroranks",
+"hour": 2,
+"dow": "Sun",
+"rel": 15.770934409021848
+},
+{
+"ch": "@xiroranks",
+"hour": 6,
+"dow": "Thu",
+"rel": 0.143072333106559
+},
+{
+"ch": "@xiroranks",
+"hour": 8,
+"dow": "Sun",
+"rel": 0.21829738230686033
+},
+{
+"ch": "@xiroranks",
+"hour": 8,
+"dow": "Fri",
+"rel": 0.16403375897597713
+},
+{
+"ch": "@xiroranks",
+"hour": 6,
+"dow": "Thu",
+"rel": 4.437117090333395
+},
+{
+"ch": "@xiroranks",
+"hour": 7,
+"dow": "Tue",
+"rel": 1.4619733880631587
+},
+{
+"ch": "@xiroranks",
+"hour": 9,
+"dow": "Wed",
+"rel": 0.9174825678635852
+},
+{
+"ch": "@xiroranks",
+"hour": 7,
+"dow": "Tue",
+"rel": 4.544839873310364
+},
+{
+"ch": "@xiroranks",
+"hour": 7,
+"dow": "Fri",
+"rel": 0.5144391940817372
+},
+{
+"ch": "@xiroranks",
+"hour": 7,
+"dow": "Thu",
+"rel": 0.3553840587375905
+},
+{
+"ch": "@xiroranks",
+"hour": 2,
+"dow": "Wed",
+"rel": 28.33989952924568
+},
+{
+"ch": "@xiroranks",
+"hour": 8,
+"dow": "Sat",
+"rel": 0.16449714920960332
+},
+{
+"ch": "@xiroranks",
+"hour": 7,
+"dow": "Fri",
+"rel": 2.170766881767891
+},
+{
+"ch": "@xiroranks",
+"hour": 6,
+"dow": "Thu",
+"rel": 8.699111886683362
+},
+{
+"ch": "@xiroranks",
+"hour": 7,
+"dow": "Sat",
+"rel": 0.2553248268641853
+},
+{
+"ch": "@xiroranks",
+"hour": 8,
+"dow": "Tue",
+"rel": 3.4817827790737756
+},
+{
+"ch": "@xiroranks",
+"hour": 4,
+"dow": "Sat",
+"rel": 0.31942474861792297
+},
+{
+"ch": "@xiroranks",
+"hour": 7,
+"dow": "Sun",
+"rel": 6.854545738496979
+},
+{
+"ch": "@xiroranks",
+"hour": 23,
+"dow": "Thu",
+"rel": 19.61883343304108
+},
+{
+"ch": "@xiroranks",
+"hour": 8,
+"dow": "Tue",
+"rel": 2.116275496152436
+},
+{
+"ch": "@xiroranks",
+"hour": 19,
+"dow": "Sun",
+"rel": 5.67357059217282
+},
+{
+"ch": "@xiroranks",
+"hour": 8,
+"dow": "Sat",
+"rel": 0.2933097165807295
+},
+{
+"ch": "@xiroranks",
+"hour": 8,
+"dow": "Mon",
+"rel": 10.219571847943254
+},
+{
+"ch": "@xiroranks",
+"hour": 7,
+"dow": "Mon",
+"rel": 0.19901920863663639
+},
+{
+"ch": "@xiroranks",
+"hour": 6,
+"dow": "Mon",
+"rel": 0.759302003213751
+},
+{
+"ch": "@xiroranks",
+"hour": 20,
+"dow": "Tue",
+"rel": 6.186122938739925
+},
+{
+"ch": "@xiroranks",
+"hour": 7,
+"dow": "Sun",
+"rel": 3.884712271713338
+},
+{
+"ch": "@xiroranks",
+"hour": 18,
+"dow": "Tue",
+"rel": 22.122036924392955
+},
+{
+"ch": "@xiroranks",
+"hour": 17,
+"dow": "Tue",
+"rel": 22.635327845455425
+},
+{
+"ch": "@xiroranks",
+"hour": 17,
+"dow": "Thu",
+"rel": 17.135030546137024
+},
+{
+"ch": "@xiroranks",
+"hour": 17,
+"dow": "Thu",
+"rel": 3.5571291191002956
+},
+{
+"ch": "@xiroranks",
+"hour": 17,
+"dow": "Sun",
+"rel": 5.062348614457502
+},
+{
+"ch": "@xiroranks",
+"hour": 12,
+"dow": "Tue",
+"rel": 0.4360385823382318
+},
+{
+"ch": "@xiroranks",
+"hour": 16,
+"dow": "Sun",
+"rel": 0.540721228995256
+},
+{
+"ch": "@xiroranks",
+"hour": 16,
+"dow": "Fri",
+"rel": 4.411915387337237
+},
+{
+"ch": "@xiroranks",
+"hour": 10,
+"dow": "Thu",
+"rel": 1.1218572680563739
+},
+{
+"ch": "@xiroranks",
+"hour": 8,
+"dow": "Fri",
+"rel": 7.19855228455375
+},
+{
+"ch": "@xiroranks",
+"hour": 17,
+"dow": "Mon",
+"rel": 8.305954969184835
+},
+{
+"ch": "@xiroranks",
+"hour": 10,
+"dow": "Sun",
+"rel": 1.269769264722244
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Tue",
+"rel": 0.2782843825488444
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Mon",
+"rel": 0.33803695772410763
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Sun",
+"rel": 0.2982617862427259
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Sat",
+"rel": 0.43642070729274507
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Fri",
+"rel": 9.917887481740955
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Thu",
+"rel": 0.45482866043613707
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Wed",
+"rel": 0.97816478285328
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Tue",
+"rel": 1.183772259488794
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Mon",
+"rel": 1.1520523402304066
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Sat",
+"rel": 3.463030457740653
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Thu",
+"rel": 0.29693815324833717
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Tue",
+"rel": 0.3158188324611537
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Sun",
+"rel": 0.3247722642160547
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Fri",
+"rel": 1.2520244493923107
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Wed",
+"rel": 0.305040678078274
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Mon",
+"rel": 0.19944312869021788
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Fri",
+"rel": 0.21502417993845108
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Wed",
+"rel": 0.3576172715196725
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Tue",
+"rel": 0.37922085289237445
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Mon",
+"rel": 1.0207290381442666
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Sun",
+"rel": 0.5914937671067746
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Sat",
+"rel": 5.043902070067458
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Fri",
+"rel": 0.563253111719352
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Thu",
+"rel": 0.5544604068280553
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Wed",
+"rel": 0.3087752140267279
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Tue",
+"rel": 0.5129739669753568
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Mon",
+"rel": 0.43298871602872285
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Sun",
+"rel": 25.270545856792364
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Sat",
+"rel": 0.40280988375665955
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Fri",
+"rel": 0.40731023593758126
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Thu",
+"rel": 0.892941727057422
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Wed",
+"rel": 0.41769130042214436
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Tue",
+"rel": 0.8820312093751034
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Mon",
+"rel": 0.42811963751364995
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Sun",
+"rel": 0.22512160878135948
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Sat",
+"rel": 18.808730305050133
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Fri",
+"rel": 1.2047707514926325
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Thu",
+"rel": 2.0741045386429926
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Wed",
+"rel": 0.3655117968790625
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Tue",
+"rel": 0.3938942700873125
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Mon",
+"rel": 0.4625530044105342
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Sun",
+"rel": 0.24881463938091794
+},
+{
+"ch": "@you_ranking",
+"hour": 21,
+"dow": "Sat",
+"rel": 66.75943443053055
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Fri",
+"rel": 62.96655463058821
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Thu",
+"rel": 0.5178430454904297
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Wed",
+"rel": 0.301343960215374
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Tue",
+"rel": 0.8242829927342004
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Mon",
+"rel": 0.5929686724433793
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Sun",
+"rel": 0.6967604082462335
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Sat",
+"rel": 0.11109062631476938
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Fri",
+"rel": 0.343955488113303
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Thu",
+"rel": 0.6499888909373686
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Wed",
+"rel": 1.5264513872146508
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Tue",
+"rel": 88.93475907515872
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Mon",
+"rel": 38.38830664794671
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Sun",
+"rel": 33.51393360089629
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Sat",
+"rel": 52.27370839419682
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Fri",
+"rel": 1.0406402601884286
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Thu",
+"rel": 0.45330648249259003
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Wed",
+"rel": 1.1234335039874443
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Tue",
+"rel": 0.9215889268645499
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Mon",
+"rel": 1.0810299755600623
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Sun",
+"rel": 0.49756309711211644
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Sat",
+"rel": 0.5791556166947939
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Fri",
+"rel": 4.280846557845125
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Thu",
+"rel": 0.5094568850188381
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Wed",
+"rel": 1.2556549856054913
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Tue",
+"rel": 32.39824334992602
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Mon",
+"rel": 0.39646589990498204
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Sun",
+"rel": 0.9143656725237427
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Sat",
+"rel": 0.811954296843608
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Fri",
+"rel": 0.4296701790213625
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Thu",
+"rel": 0.4379807033218461
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Wed",
+"rel": 2.1334883874841046
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Tue",
+"rel": 1.0564009473430431
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Mon",
+"rel": 1.2788280175286826
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Sun",
+"rel": 1110.852949101584
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Sat",
+"rel": 0.2717229447052317
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Fri",
+"rel": 0.29546324791173256
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Thu",
+"rel": 5.968771715853814
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Wed",
+"rel": 0.46401845522575036
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Tue",
+"rel": 0.22869541786620906
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Mon",
+"rel": 0.39366736157398874
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Sun",
+"rel": 4.936545979701142
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Sat",
+"rel": 1.8405967693900416
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Fri",
+"rel": 0.4536468452625757
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Thu",
+"rel": 12.670259384794294
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Wed",
+"rel": 0.6491474385337929
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Tue",
+"rel": 0.20073839812044114
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Mon",
+"rel": 5.675095372484506
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Sun",
+"rel": 1.2381641210367829
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Sat",
+"rel": 1.252166267213138
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Fri",
+"rel": 1.5313204657297237
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Thu",
+"rel": 0.3433598532658281
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Wed",
+"rel": 0.43939888153011974
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Tue",
+"rel": 7.903459882102118
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Mon",
+"rel": 0.3675728825417535
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Sun",
+"rel": 2.188929700906216
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Sat",
+"rel": 0.6657212145278175
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Fri",
+"rel": 0.5771701672032108
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Thu",
+"rel": 0.40891750457362475
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Wed",
+"rel": 0.26795059067122373
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Tue",
+"rel": 210.53412373132142
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Mon",
+"rel": 1.6905156968691353
+},
+{
+"ch": "@you_ranking",
+"hour": 20,
+"dow": "Sun",
+"rel": 2.7848765475869697
+},
+{
+"ch": "@you_ranking",
+"hour": 20,
+"dow": "Sat",
+"rel": 0.8194517323046814
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Thu",
+"rel": 0.8539985534582276
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Tue",
+"rel": 0.2892610818808825
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Mon",
+"rel": 1.1692501146360719
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Sun",
+"rel": 0.9733146133809841
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Sat",
+"rel": 0.9799138693101509
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Fri",
+"rel": 0.5433135261110245
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Thu",
+"rel": 68.16525557934943
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Wed",
+"rel": 4.844317123556412
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Tue",
+"rel": 0.8604276280024015
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Mon",
+"rel": 2.0198923130013853
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Sun",
+"rel": 0.4138338556956401
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Sat",
+"rel": 0.3542420073839812
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Fri",
+"rel": 1.3657623416958575
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Thu",
+"rel": 6.385555382222663
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Wed",
+"rel": 3.4071447818132827
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Tue",
+"rel": 0.5844028760654064
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Mon",
+"rel": 1.039798807784853
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Sun",
+"rel": 0.5367615427888002
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Sat",
+"rel": 5.764412236041581
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Fri",
+"rel": 2.0705780021650853
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Thu",
+"rel": 21.45727265421506
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Wed",
+"rel": 2.898056623128596
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Tue",
+"rel": 59.559400394253544
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Mon",
+"rel": 22.178662090678316
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Sun",
+"rel": 1951.254302989047
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Sat",
+"rel": 30.770146403263702
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Fri",
+"rel": 802.7240272479306
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Thu",
+"rel": 4.336864597071934
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Wed",
+"rel": 81.86147235261583
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Tue",
+"rel": 2.5577411257498617
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Mon",
+"rel": 2.6054675497189645
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Sun",
+"rel": 296.5193274053484
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Sat",
+"rel": 15.221751071906363
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Fri",
+"rel": 34.67713282184373
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Thu",
+"rel": 57.22079616524613
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Wed",
+"rel": 2.7312977748783913
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Tue",
+"rel": 3657.356808909941
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Mon",
+"rel": 5.944785595091212
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Sun",
+"rel": 2.1769886403925516
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Sat",
+"rel": 13.043798070332185
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Fri",
+"rel": 2.2068932915443487
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Thu",
+"rel": 5.451524305210859
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Wed",
+"rel": 4.029781742373746
+},
+{
+"ch": "@you_ranking",
+"hour": 19,
+"dow": "Tue",
+"rel": 1.8907151872704324
+}
+]

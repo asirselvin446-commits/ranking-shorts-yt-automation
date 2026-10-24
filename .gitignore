@@ -1,0 +1,27 @@
+# Virtual environment & Python cache
+.venv/
+__pycache__/
+*.pyc
+
+# Local Credentials & Secrets (injected via GitHub Actions Secrets)
+client_secret.json
+token.json
+.env
+
+# Media processing & projects
+projects/
+ready/
+uploaded/
+failed/
+logs/
+*.lock
+*.log
+
+# Video binaries
+*.mp4
+*.mkv
+*.webm
+
+# Keep assets
+!assets/
+!assets/**
