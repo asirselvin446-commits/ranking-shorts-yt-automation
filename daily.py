@@ -167,8 +167,9 @@ def gather(topic, proj, state):
         if len(got) >= N_CANDIDATES:
             break
         out = proj / "raw" / f"{r['id']}.mp4"
-        res = sh([PY, "-m", "yt_dlp", "-q", "--no-progress", "--no-playlist", "--js-runtimes", "node", "-f",
-                  "bv*[height<=1920][ext=mp4]+ba[ext=m4a]/b[ext=mp4]/b", "--merge-output-format", "mp4",
+        res = sh([PY, "-m", "yt_dlp", "-q", "--no-progress", "--no-playlist", "--js-runtimes", "node",
+                  "--extractor-args", "youtube:player_client=ios,mweb,android",
+                  "-f", "bv*[height<=1920][ext=mp4]+ba[ext=m4a]/b[ext=mp4]/b", "--merge-output-format", "mp4",
                   "--write-info-json", "-o", str(proj / "raw" / "%(id)s.%(ext)s"), r["url"]], timeout=300)
         if not out.exists():
             log(f"  download failed {r['id']}: {res.stderr.strip()[-200:]}")
