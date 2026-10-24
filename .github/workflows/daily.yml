@@ -43,12 +43,8 @@ jobs:
           CLIENT_SECRET_JSON: ${{ secrets.YT_CLIENT_SECRET_JSON }}
           OPENROUTER_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: |
-          if [ -n "$TOKEN_JSON" ]; then
-            echo "$TOKEN_JSON" > token.json
-          fi
-          if [ -n "$CLIENT_SECRET_JSON" ]; then
-            echo "$CLIENT_SECRET_JSON" > client_secret.json
-          fi
+          python3 -c "import os; t=os.environ.get('TOKEN_JSON','').strip().lstrip('\ufeff'); open('token.json','w',encoding='utf-8').write(t) if t else None"
+          python3 -c "import os; s=os.environ.get('CLIENT_SECRET_JSON','').strip().lstrip('\ufeff'); open('client_secret.json','w',encoding='utf-8').write(s) if s else None"
           if [ -n "$OPENROUTER_KEY" ]; then
             echo "OPENROUTER_API_KEY=$OPENROUTER_KEY" >> .env
             echo "OPENROUTER_API_KEY=$OPENROUTER_KEY" >> $GITHUB_ENV
