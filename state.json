@@ -60,7 +60,7 @@
    "created": "2026-10-14T17:54:27.476148+05:30",
    "commented": true,
    "stats": {
-    "views": 13003,
+    "views": 13001,
     "watch_pct": 75.34,
     "watch_sec": 31,
     "likes": 175,
@@ -86,8 +86,8 @@
    "created": "2026-10-15T21:47:40.531883+05:30",
    "commented": true,
    "stats": {
-    "views": 30477,
-    "watch_pct": 77.31,
+    "views": 30473,
+    "watch_pct": 77.3,
     "watch_sec": 30,
     "likes": 645,
     "subs": 58,
@@ -112,7 +112,7 @@
    "created": "2026-10-15T22:01:24.957845+05:30",
    "commented": true,
    "stats": {
-    "views": 22873,
+    "views": 22863,
     "watch_pct": 87.57,
     "watch_sec": 31,
     "likes": 277,
@@ -138,8 +138,8 @@
    "created": "2026-10-16T09:56:06.908940+05:30",
    "commented": true,
    "stats": {
-    "views": 6082,
-    "watch_pct": 47.95,
+    "views": 6073,
+    "watch_pct": 47.87,
     "watch_sec": 17,
     "likes": 151,
     "subs": 12,
@@ -190,7 +190,7 @@
    "created": "2026-10-18T03:06:54.613880+05:30",
    "commented": true,
    "stats": {
-    "views": 4338,
+    "views": 4335,
     "watch_pct": 50.75999999999999,
     "watch_sec": 17,
     "likes": 64,
@@ -216,7 +216,7 @@
    "created": "2026-10-18T03:18:52.608868+05:30",
    "commented": true,
    "stats": {
-    "views": 6474,
+    "views": 6469,
     "watch_pct": 53.459999999999994,
     "watch_sec": 19,
     "likes": 97,
@@ -242,8 +242,8 @@
    "created": "2026-10-18T10:05:55.014313+05:30",
    "commented": true,
    "stats": {
-    "views": 24083,
-    "watch_pct": 74.88,
+    "views": 24082,
+    "watch_pct": 74.87,
     "watch_sec": 25,
     "likes": 219,
     "subs": 17,
@@ -366,7 +366,11 @@
   "smartphone-tests",
   "body-transformations",
   "basketball-dunks",
-  "satisfying-machines"
+  "satisfying-machines",
+  "amazing-inventions",
+  "arm-wrestling",
+  "boxing-knockouts",
+  "restoration"
  ],
  "used_clips": [
   "mjAYX6KOSlc",
