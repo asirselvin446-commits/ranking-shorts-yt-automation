@@ -7,8 +7,11 @@
 
   python analytics.py        # print the current table
 """
-import datetime as dt, json, statistics as st
+import datetime as dt, json, statistics as st, sys
 from pathlib import Path
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
 
 ROOT = Path(__file__).resolve().parent
 MIN_AGE_H = 48            # stats settle after ~2 days
