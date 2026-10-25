@@ -86,7 +86,7 @@
    "created": "2026-10-15T21:47:40.531883+05:30",
    "commented": true,
    "stats": {
-    "views": 31364,
+    "views": 31360,
     "watch_pct": 77.19,
     "watch_sec": 30,
     "likes": 657,
@@ -112,7 +112,7 @@
    "created": "2026-10-15T22:01:24.957845+05:30",
    "commented": true,
    "stats": {
-    "views": 22910,
+    "views": 22904,
     "watch_pct": 87.51,
     "watch_sec": 31,
     "likes": 279,
@@ -190,8 +190,8 @@
    "created": "2026-10-18T03:06:54.613880+05:30",
    "commented": true,
    "stats": {
-    "views": 4352,
-    "watch_pct": 50.81,
+    "views": 4353,
+    "watch_pct": 50.82,
     "watch_sec": 17,
     "likes": 66,
     "subs": 2,
@@ -216,8 +216,8 @@
    "created": "2026-10-18T03:18:52.608868+05:30",
    "commented": true,
    "stats": {
-    "views": 6472,
-    "watch_pct": 53.48,
+    "views": 6471,
+    "watch_pct": 53.5,
     "watch_sec": 19,
     "likes": 98,
     "subs": 1,
@@ -242,8 +242,8 @@
    "created": "2026-10-18T10:05:55.014313+05:30",
    "commented": true,
    "stats": {
-    "views": 25875,
-    "watch_pct": 74.92,
+    "views": 25853,
+    "watch_pct": 74.94,
     "watch_sec": 25,
     "likes": 241,
     "subs": 21,
@@ -268,8 +268,8 @@
    "created": "2026-10-19T12:46:01.104796+05:30",
    "commented": true,
    "stats": {
-    "views": 1003,
-    "watch_pct": 36.05,
+    "views": 1001,
+    "watch_pct": 36.02,
     "watch_sec": 12,
     "likes": 9,
     "subs": 0,
@@ -294,7 +294,7 @@
    "created": "2026-10-19T13:21:41.247438+05:30",
    "commented": true,
    "stats": {
-    "views": 24613,
+    "views": 24565,
     "watch_pct": 82.92,
     "watch_sec": 28,
     "likes": 489,
@@ -317,7 +317,15 @@
     "selfDeclaredMadeForKids": false
    },
    "project": "20261023-body-transformations",
-   "created": "2026-10-22T21:49:22.660162+05:30"
+   "created": "2026-10-22T21:49:22.660162+05:30",
+   "stats": {
+    "views": 1598,
+    "watch_pct": 70.14,
+    "watch_sec": 25,
+    "likes": 20,
+    "subs": 0,
+    "source": "analytics"
+   }
   },
   "2026-10-24 03:30": {
    "video_id": "HVtAeThSkQ0",
