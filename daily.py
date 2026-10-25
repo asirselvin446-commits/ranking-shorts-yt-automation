@@ -348,7 +348,14 @@ def generate_deterministic_spec(topic, proj, cands):
             if raw_p.exists() and not any(vc["id"] == c["id"] for vc in valid_cands):
                 valid_cands.append(c)
 
-    chosen = sorted(valid_cands, key=lambda x: -x.get("views", 0))[:6]
+    # Prioritize candidates whose title shares the core topic words (e.g. buzzer, snow)
+    core_words = [w.lower() for w in topic.get("name", "").split() if len(w) > 3 and w.lower() not in GENERIC_TOPIC_WORDS]
+    def cand_score(c):
+        t = c.get("title", "").lower()
+        core_hits = sum(1 for w in core_words if _stem(w) in t)
+        return (core_hits, c.get("views", 0))
+
+    chosen = sorted(valid_cands, key=cand_score, reverse=True)[:6]
     items = []
     play_order_cands = [chosen[1], chosen[2], chosen[3], chosen[4], chosen[5], chosen[0]] if len(chosen) >= 6 else chosen
     hook_captions = [
@@ -484,7 +491,8 @@ def run_agent_cloud(topic, proj, feedback=""):
                 "5. 'segments': [[start, end]] where length (end - start) is 5.0 to 6.5s (rank 1 must be 6.0 to 6.5s). Total video length 32 to 38s.\n"
                 "6. 'label': unique descriptive name <= 26 chars ending with 🔥 (never generic like 'viral moment' or 'i built a').\n"
                 "7. 'captions': [[0.2, 2.2, '<hook text <= 22 chars>']].\n"
-                "8. 'yt_title' must end with '#shorts' (max 70 chars)."
+                "8. 'yt_title' must end with '#shorts' (max 70 chars).\n"
+                f"9. STRICT TOPIC RELEVANCE: All selected clips MUST genuinely show the topic ('{topic['name']}'). Do NOT select trick shots, warmups, reporter segments, or off-topic stunts."
             )
             user_msg = (
                 f"Topic: {topic['name']} ({topic.get('category', 'general')})\n"
