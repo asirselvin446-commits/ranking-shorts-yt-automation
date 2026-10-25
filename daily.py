@@ -433,7 +433,14 @@ def run_agent_cloud(topic, proj, feedback=""):
         log("cloud agent: no candidates found in candidates.json")
         return
 
-    api_key = os.environ.get("OPENROUTER_API_KEY", "").strip()
+    # 2026-10-25 run #10: "latin-1 codec can't encode '\ufeff' in
+    # position 7" - position 7 is exactly where the API key starts
+    # inside the "Bearer " header value, so the stored secret begins
+    # with an invisible BOM character (pasted in with the key). HTTP
+    # headers are latin-1, so urllib dies before the request is even
+    # sent. Strip BOM / stray non-ASCII from the key here instead of
+    # asking the user to re-paste the secret.
+    api_key = os.environ.get("OPENROUTER_API_KEY", "").strip().replace("\ufeff", "").strip()
     spec = None
     if api_key:
         try:
