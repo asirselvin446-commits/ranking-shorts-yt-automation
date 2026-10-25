@@ -244,18 +244,33 @@ def gather(topic, proj, state):
         # others, so retry the same clip with different clients before
         # giving up on it. A clip that fails on every client is counted,
         # not hidden.
+        # YouTube cookies (2026-10-25 fix): from a GitHub runner's
+        # datacenter IP, YouTube treats downloads as a bot and returns
+        # only SABR / login-gated formats, which 403 on every player
+        # client. A logged-in cookies.txt (written by the workflow from
+        # the YT_COOKIES_TXT secret, never committed, never logged)
+        # is what makes the runner look like a real signed-in session.
+        # If no cookies file exists, yt-dlp runs exactly as before.
+        cookies_file = ROOT / "cookies.txt"
+        cookie_args = ["--cookies", str(cookies_file)] if cookies_file.exists() else []
+        if cookie_args:
+            log("  using cookies.txt for yt-dlp (file present, contents never logged)")
         for client in ("ios,android,mweb", "android", "web", "tv"):
             if out.exists():
                 out.unlink()
             res = sh([PY, "-m", "yt_dlp", "-q", "--no-progress", "--no-playlist", "--js-runtimes", "node",
                       "--extractor-args", f"youtube:player_client={client}",
                       "--retries", "2", "--fragment-retries", "2", "--socket-timeout", "30",
+                      ] + cookie_args + [
                       "-f", "bv*[height<=1920][ext=mp4]+ba[ext=m4a]/b[ext=mp4]/b", "--merge-output-format", "mp4",
                       "--write-info-json", "-o", str(proj / "raw" / "%(id)s.%(ext)s"), r["url"]], timeout=300)
             if out.exists():
                 downloaded = True
                 break
-            last_err = res.stderr.strip()[-200:] if res.stderr else ""
+            # Log enough of the error to actually diagnose it: the old
+            # last-200-chars truncation hid the whole yt-dlp error in
+            # run #6, leaving only its cookies-advice tail visible.
+            last_err = res.stderr.strip()[-2000:] if res.stderr else ""
         if not downloaded:
             log(f"  download failed {r['id']} (all clients): {last_err}")
             continue
