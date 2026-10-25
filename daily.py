@@ -273,13 +273,21 @@ def gather(topic, proj, state):
         if out.exists():
             out.unlink()
         res = sh([PY, "-m", "yt_dlp", "-q", "--no-progress", "--no-playlist",
-                  "-4",
                   "--js-runtimes", "node", "--remote-components", "ejs:github",
-                  "--extractor-args", "youtube:player_client=mweb,android,web",
+                  "--extractor-args", "youtube:player_client=mweb",
                   "--retries", "1", "--fragment-retries", "1", "--socket-timeout", "30",
                   ] + cookie_args + [
-                  "-f", "bv*[height<=1920][ext=mp4]+ba[ext=m4a]/b[ext=mp4]/b", "--merge-output-format", "mp4",
+                  "-f", "bv*[height<=1080][ext=mp4]+ba[ext=m4a]/best[ext=mp4]/best", "--merge-output-format", "mp4",
                   "--write-info-json", "-o", str(proj / "raw" / "%(id)s.%(ext)s"), r["url"]], timeout=300)
+        if not out.exists():
+            # Secondary fallback: web client with webpage skipped
+            res = sh([PY, "-m", "yt_dlp", "-q", "--no-progress", "--no-playlist",
+                      "--js-runtimes", "node", "--remote-components", "ejs:github",
+                      "--extractor-args", "youtube:player_client=web;player_skip=webpage",
+                      "--retries", "1", "--fragment-retries", "1", "--socket-timeout", "30",
+                      ] + cookie_args + [
+                      "-f", "bv*[height<=1080][ext=mp4]+ba[ext=m4a]/best[ext=mp4]/best", "--merge-output-format", "mp4",
+                      "--write-info-json", "-o", str(proj / "raw" / "%(id)s.%(ext)s"), r["url"]], timeout=300)
         if out.exists():
             downloaded = True
         else:
@@ -763,7 +771,7 @@ def main():
             log("no internet - giving up for now"); return
         built = 0
         for slot in (todo[:1] if a.dry_run else todo):
-            for attempt in range(2):  # a topic with too few clips gets one retry with the next topic
+            for attempt in range(5):  # retry with the next topic if a topic has too few clips or download blocks
                 if build_one(slot, state, a):
                     built += 1
                     break
