@@ -56,6 +56,22 @@ jobs:
         run: |
           python -m yt_dlp --version
 
+      # YouTube cookies (2026-10-25 fix): the runner's datacenter IP is
+      # treated as a bot, so yt-dlp gets only login-gated formats that
+      # 403 on every player client. If the YT_COOKIES_TXT repository
+      # secret is set (a youtube.com cookies.txt export, added by the
+      # repo owner in Settings > Secrets, never in the repo or logs),
+      # write it to cookies.txt for daily.py to pass to yt-dlp.
+      # If the secret is absent, this step is a no-op and downloads
+      # run exactly as before. cookies.txt is never committed: the
+      # state step below only adds state.json.
+      - name: Restore YouTube Cookies from Secret
+        env:
+          YT_COOKIES_TXT: ${{ secrets.YT_COOKIES_TXT }}
+        run: |
+          python3 -c "import os; t=os.environ.get('YT_COOKIES_TXT','').strip(); open('cookies.txt','w',encoding='utf-8').write(t + '\n') if t else None"
+          if [ -s cookies.txt ]; then echo "cookies.txt restored (contents never logged)"; else echo "no YT_COOKIES_TXT secret - running without cookies"; fi
+
       - name: Run Daily Ranking Shorts Pipeline
         run: |
           python daily.py
