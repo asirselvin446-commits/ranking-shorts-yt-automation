@@ -18,8 +18,8 @@
    "created": "2026-10-14T01:08:57.448820+05:30",
    "commented": true,
    "stats": {
-    "views": 9190,
-    "watch_pct": 48.09,
+    "views": 9192,
+    "watch_pct": 48.08,
     "watch_sec": 20,
     "likes": 100,
     "subs": 1,
@@ -34,7 +34,7 @@
    "created": "2026-10-14T00:47:00+05:30",
    "commented": true,
    "stats": {
-    "views": 24509,
+    "views": 24519,
     "watch_pct": 79.07,
     "watch_sec": 22,
     "likes": 268,
@@ -60,10 +60,10 @@
    "created": "2026-10-14T17:54:27.476148+05:30",
    "commented": true,
    "stats": {
-    "views": 13001,
-    "watch_pct": 75.34,
+    "views": 13020,
+    "watch_pct": 75.32,
     "watch_sec": 31,
-    "likes": 175,
+    "likes": 176,
     "subs": 12,
     "source": "analytics"
    }
@@ -86,11 +86,11 @@
    "created": "2026-10-15T21:47:40.531883+05:30",
    "commented": true,
    "stats": {
-    "views": 30473,
-    "watch_pct": 77.3,
+    "views": 31364,
+    "watch_pct": 77.19,
     "watch_sec": 30,
-    "likes": 645,
-    "subs": 58,
+    "likes": 657,
+    "subs": 59,
     "source": "analytics"
    }
   },
@@ -112,10 +112,10 @@
    "created": "2026-10-15T22:01:24.957845+05:30",
    "commented": true,
    "stats": {
-    "views": 22863,
-    "watch_pct": 87.57,
+    "views": 22910,
+    "watch_pct": 87.51,
     "watch_sec": 31,
-    "likes": 277,
+    "likes": 279,
     "subs": 11,
     "source": "analytics"
    }
@@ -138,10 +138,10 @@
    "created": "2026-10-16T09:56:06.908940+05:30",
    "commented": true,
    "stats": {
-    "views": 6073,
-    "watch_pct": 47.87,
+    "views": 6075,
+    "watch_pct": 47.86,
     "watch_sec": 17,
-    "likes": 151,
+    "likes": 152,
     "subs": 12,
     "source": "analytics"
    }
@@ -164,10 +164,10 @@
    "created": "2026-10-16T10:11:51.133073+05:30",
    "commented": true,
    "stats": {
-    "views": 131,
-    "watch_pct": 69.18,
+    "views": 133,
+    "watch_pct": 68.42,
     "watch_sec": 26,
-    "likes": 1,
+    "likes": 2,
     "subs": 1,
     "source": "analytics"
    }
@@ -190,10 +190,10 @@
    "created": "2026-10-18T03:06:54.613880+05:30",
    "commented": true,
    "stats": {
-    "views": 4335,
-    "watch_pct": 50.75999999999999,
+    "views": 4352,
+    "watch_pct": 50.81,
     "watch_sec": 17,
-    "likes": 64,
+    "likes": 66,
     "subs": 2,
     "source": "analytics"
    }
@@ -216,10 +216,10 @@
    "created": "2026-10-18T03:18:52.608868+05:30",
    "commented": true,
    "stats": {
-    "views": 6469,
-    "watch_pct": 53.459999999999994,
+    "views": 6472,
+    "watch_pct": 53.48,
     "watch_sec": 19,
-    "likes": 97,
+    "likes": 98,
     "subs": 1,
     "source": "analytics"
    }
@@ -242,11 +242,11 @@
    "created": "2026-10-18T10:05:55.014313+05:30",
    "commented": true,
    "stats": {
-    "views": 24082,
-    "watch_pct": 74.87,
+    "views": 25875,
+    "watch_pct": 74.92,
     "watch_sec": 25,
-    "likes": 219,
-    "subs": 17,
+    "likes": 241,
+    "subs": 21,
     "source": "analytics"
    }
   },
@@ -268,10 +268,10 @@
    "created": "2026-10-19T12:46:01.104796+05:30",
    "commented": true,
    "stats": {
-    "views": 1000,
-    "watch_pct": 36.08,
+    "views": 1003,
+    "watch_pct": 36.05,
     "watch_sec": 12,
-    "likes": 8,
+    "likes": 9,
     "subs": 0,
     "source": "analytics"
    }
@@ -294,10 +294,10 @@
    "created": "2026-10-19T13:21:41.247438+05:30",
    "commented": true,
    "stats": {
-    "views": 24339,
-    "watch_pct": 83.09,
+    "views": 24613,
+    "watch_pct": 82.92,
     "watch_sec": 28,
-    "likes": 486,
+    "likes": 489,
     "subs": 18,
     "source": "analytics"
    }
@@ -370,7 +370,11 @@
   "amazing-inventions",
   "arm-wrestling",
   "boxing-knockouts",
-  "restoration"
+  "restoration",
+  "gaming-setups",
+  "flexibility",
+  "buzzer-beaters",
+  "snow-removal"
  ],
  "used_clips": [
   "mjAYX6KOSlc",
