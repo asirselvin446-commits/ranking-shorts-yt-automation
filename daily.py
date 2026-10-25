@@ -38,41 +38,67 @@ GENERIC_TOPIC_WORDS = {
     "ranking", "craziest", "crazy", "best", "most", "unreal", "funniest",
     "funny", "satisfying", "amazing", "coolest", "insane", "top", "ever",
     "moments", "moment", "clips", "videos", "video", "of", "the", "and",
+    # Filler words that appear in topic names / queries but carry no
+    # subject meaning (added 2026-10-25 after run #9): "items" in
+    # "3D Printed Items", "hits" in "Punching Machine Hits",
+    # "removal" in "Snow Removal", "strongest" as a pure adjective,
+    # "shorts" in every "#shorts" query.
+    "shorts", "strongest", "items", "hits", "removal",
 }
 
 # Generic leading words that must never survive into a rank label.
 GENERIC_LABEL_WORDS = {"i", "built", "a", "an", "the", "this", "is", "my"}
 
 
-def topic_fit_keywords(topic_name):
-    """Content keywords of a topic, e.g. 'Craziest Gaming Setups' -> {'gaming', 'setup'}."""
-    words = re.sub(r"[^\w\s]", "", (topic_name or "")).lower().split()
-    return {w for w in words if w not in GENERIC_TOPIC_WORDS}
-
-
 def _stem(w):
-    return w[:-1] if len(w) > 3 and w.endswith("s") else w
+    if len(w) > 3 and w.endswith("s"):
+        return w[:-1]
+    if len(w) > 4 and w.endswith("ed"):
+        return w[:-2]
+    return w
+
+
+def topic_fit_keywords(topic):
+    """Distinctive subject words for a topic, from its name AND its
+    search queries, minus generic/filler words.
+
+    Run #9 proved the old rule (every word of the topic NAME must
+    appear in the title) is wrong for this pipeline: the search
+    queries are deliberately broader than the name - "snow blower
+    satisfying" never says "removal", "boxing machine record" never
+    says "punching", "game winning shot" never says "buzzer" - so
+    good topics scored 0-2/14 and were burned. The query words ARE
+    the topic's intent, so they belong in the keyword set."""
+    texts = [topic.get("name", "")] + list(topic.get("queries") or [])
+    words = []
+    for t in texts:
+        words += re.sub(r"[^\w\s]", "", (t or "")).lower().split()
+    return {_stem(w) for w in words if w not in GENERIC_TOPIC_WORDS}
 
 
 def candidate_fits_topic(title, keywords):
-    """True if the candidate's title visibly shows the topic.
+    """True if the candidate's title shares the topic's subject.
 
-    A title matches only when EVERY topic keyword (or its singular/
-    plural stem) appears in it. Requiring all words matters: 'indoor
-    cycling dream setup' contains 'setup' but is not a gaming setup,
-    so it must NOT fit 'Gaming Setups' (keywords gaming + setup), even
-    though search returned it. Stricter here is the point - a topic
-    with too few fitting clips is skipped, not published mismatched."""
+    A title fits when it shares at least TWO distinctive keywords
+    (stemmed) with the topic's name+queries - e.g. "game winning
+    shot" fits Buzzer Beaters (game + winning + shot), "snow blower"
+    fits Snow Removal (snow + blower), "boxing machine record" fits
+    Punching Machine (boxing + machine + record). One shared word
+    alone is too weak; requiring every word was run #9's failure.
+    This gate is a COARSE filter only: the agent's visual check of
+    the clips is the final topic-fit judge before any publish, so a
+    loosely matching title can still be rejected on sight."""
     if not keywords:
         return True
     title_words = re.sub(r"[^\w\s]", "", (title or "")).lower().split()
     title_stems = {_stem(w) for w in title_words}
-    return all(_stem(k) in title_stems for k in keywords)
+    shared = keywords & title_stems
+    return len(shared) >= min(2, len(keywords))
 
 
 def filter_topic_fit(cands, topic):
     """Split candidates into (fitting, rejected) for the topic-fit gate."""
-    keywords = topic_fit_keywords(topic.get("name", ""))
+    keywords = topic_fit_keywords(topic)
     fitting = [c for c in cands if candidate_fits_topic(c.get("title", ""), keywords)]
     rejected = [c for c in cands if c not in fitting]
     return fitting, rejected, keywords
