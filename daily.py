@@ -260,24 +260,12 @@ def gather(topic, proj, state):
     (proj / "raw").mkdir(parents=True, exist_ok=True)
     (proj / "sheets").mkdir(exist_ok=True)
     got = []
-    for r in rows[: N_CANDIDATES + 4]:
+    for r in rows:
         if len(got) >= N_CANDIDATES:
             break
         out = proj / "raw" / f"{r['id']}.mp4"
         downloaded = False
         last_err = ""
-        # CAUTIOUS download route (2026-10-25, user rule: do not get
-        # YouTube to flag the account). Diagnostic #2 proved exactly ONE
-        # strategy works from the runner: mweb client + cookies +
-        # EJS JS-challenge solver. So use ONLY that, once per clip,
-        # with a pause between clips — no multi-client retry storm,
-        # no PO-token spoofing, no impersonation. A clip that fails on
-        # this one route is counted, not hammered.
-        # YouTube cookies: from a GitHub runner's datacenter IP, YouTube
-        # treats downloads as a bot and returns only SABR / login-gated
-        # formats. A logged-in cookies.txt (written by the workflow from
-        # the YT_COOKIES_TXT secret, never committed, never logged)
-        # is what makes the runner look like a real signed-in session.
         cookies_file = ROOT / "cookies.txt"
         cookie_args = ["--cookies", str(cookies_file)] if cookies_file.exists() else []
         if cookie_args:
@@ -285,8 +273,9 @@ def gather(topic, proj, state):
         if out.exists():
             out.unlink()
         res = sh([PY, "-m", "yt_dlp", "-q", "--no-progress", "--no-playlist",
+                  "-4",
                   "--js-runtimes", "node", "--remote-components", "ejs:github",
-                  "--extractor-args", "youtube:player_client=mweb",
+                  "--extractor-args", "youtube:player_client=mweb,android,web",
                   "--retries", "1", "--fragment-retries", "1", "--socket-timeout", "30",
                   ] + cookie_args + [
                   "-f", "bv*[height<=1920][ext=mp4]+ba[ext=m4a]/b[ext=mp4]/b", "--merge-output-format", "mp4",
@@ -656,8 +645,14 @@ def build_one(slot, state, a):
     proj.mkdir(parents=True, exist_ok=True)
     log(f"topic: {topic['name']}  ->  {proj}")
 
-    cands = (json.loads((proj / "candidates.json").read_text(encoding="utf-8"))
-             if (proj / "candidates.json").exists() else gather(topic, proj, state))
+    try:
+        cands = (json.loads((proj / "candidates.json").read_text(encoding="utf-8"))
+                 if (proj / "candidates.json").exists() else gather(topic, proj, state))
+    except DownloadError as e:
+        log(f"gather failed for '{topic['name']}': {e} - skipping topic for this cycle")
+        state["used_topics"].append(topic["slug"])
+        save_state(state)
+        return False
     # TOPIC-FIT GATE (2026-10-25): the title is generated from the topic
     # name alone, so without this gate an off-topic clip set ships under
     # a title it does not match (Gaming Setups over secret rooms). If
