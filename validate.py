@@ -6,7 +6,7 @@ import json, os, subprocess, sys
 from pathlib import Path
 
 MIN_TOTAL, MAX_TOTAL = 30.0, 44.0
-MIN_ITEM, MAX_ITEM = 4.5, 8.5
+MIN_ITEM, MAX_ITEM = 5.0, 8.5  # 2026-10-25: was 4.5 - a 4s #1 payoff is too rushed to publish
 NOWIN = 0x08000000 if os.name == "nt" else 0
 
 

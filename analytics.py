@@ -24,8 +24,12 @@ def _topics():
 def _published(state):
     now = dt.datetime.now().astimezone()
     out = []
+    from zoneinfo import ZoneInfo
+    ist = ZoneInfo("Asia/Kolkata")
     for key, s in state.get("slots", {}).items():
-        slot = dt.datetime.strptime(key, "%Y-%m-%d %H:%M").astimezone()
+        # Slot keys are IST wall-clock times (see daily.py), regardless of
+        # which runner wrote them, so interpret them as IST, not runner-local.
+        slot = dt.datetime.strptime(key, "%Y-%m-%d %H:%M").replace(tzinfo=ist)
         if (now - slot).total_seconds() / 3600 >= MIN_AGE_H:
             out.append(s)
     return out

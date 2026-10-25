@@ -11,6 +11,16 @@ Keeps the next 2 publish slots filled (schedule.json: daily times in the audienc
 """
 import argparse, datetime as dt, json, os, re, shutil, subprocess, sys, time, traceback, urllib.request
 from pathlib import Path
+from zoneinfo import ZoneInfo
+
+IST = ZoneInfo("Asia/Kolkata")  # slot keys / log times are IST on every runner
+
+
+class DownloadError(Exception):
+    """Candidate clips were found but none could be downloaded.
+
+    This is an infrastructure failure (e.g. YouTube blocking this runner),
+    not a bad topic, so the topic must NOT be marked used."""
 
 ROOT = Path(__file__).resolve().parent
 PY = Path(sys.executable)
@@ -167,12 +177,26 @@ def gather(topic, proj, state):
         if len(got) >= N_CANDIDATES:
             break
         out = proj / "raw" / f"{r['id']}.mp4"
-        res = sh([PY, "-m", "yt_dlp", "-q", "--no-progress", "--no-playlist", "--js-runtimes", "node",
-                  "--extractor-args", "youtube:player_client=ios,mweb,android",
-                  "-f", "bv*[height<=1920][ext=mp4]+ba[ext=m4a]/b[ext=mp4]/b", "--merge-output-format", "mp4",
-                  "--write-info-json", "-o", str(proj / "raw" / "%(id)s.%(ext)s"), r["url"]], timeout=300)
-        if not out.exists():
-            log(f"  download failed {r['id']}: {res.stderr.strip()[-200:]}")
+        downloaded = False
+        last_err = ""
+        # YouTube 403s hit some player clients (and some runner IPs) but not
+        # others, so retry the same clip with different clients before
+        # giving up on it. A clip that fails on every client is counted,
+        # not hidden.
+        for client in ("ios,android,mweb", "android", "web", "tv"):
+            if out.exists():
+                out.unlink()
+            res = sh([PY, "-m", "yt_dlp", "-q", "--no-progress", "--no-playlist", "--js-runtimes", "node",
+                      "--extractor-args", f"youtube:player_client={client}",
+                      "--retries", "2", "--fragment-retries", "2", "--socket-timeout", "30",
+                      "-f", "bv*[height<=1920][ext=mp4]+ba[ext=m4a]/b[ext=mp4]/b", "--merge-output-format", "mp4",
+                      "--write-info-json", "-o", str(proj / "raw" / "%(id)s.%(ext)s"), r["url"]], timeout=300)
+            if out.exists():
+                downloaded = True
+                break
+            last_err = res.stderr.strip()[-200:] if res.stderr else ""
+        if not downloaded:
+            log(f"  download failed {r['id']} (all clients): {last_err}")
             continue
         info = json.loads((proj / "raw" / f"{r['id']}.info.json").read_text(encoding="utf-8"))
         r["w"], r["h"] = info.get("width"), info.get("height")
@@ -188,6 +212,11 @@ def gather(topic, proj, state):
         lines.append(f"| {r['id']} | {r['views']:,} | {r['sec']}s | {r['w']}x{r['h']} | {r['title'][:70]} | {r['channel']} |")
     (proj / "candidates.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     (proj / "candidates.json").write_text(json.dumps(got, indent=1, ensure_ascii=False), encoding="utf-8")
+    if not got and rows:
+        # Many candidates found but zero downloaded = the download route is
+        # broken (e.g. YouTube blocking this runner), NOT a bad topic.
+        # Raise so the caller fails loudly instead of burning the topic.
+        raise DownloadError(f"downloaded 0 of {len(rows)} candidate clips (last error: {last_err})")
     log(f"downloaded {len(got)} clips")
     return got
 
@@ -226,18 +255,35 @@ def generate_deterministic_spec(topic, proj, cands):
         "UNREAL 🏆"
     ]
 
+    seen_labels = set()
     for idx, (rank, cand) in enumerate(zip([6, 5, 4, 3, 2, 1], play_order_cands)):
         dur = cand.get("actual_dur") or float(cand.get("sec", 15))
-        item_len = 5.5
-        start = min(max(1.0, dur * 0.2), max(0.0, dur - item_len - 0.2))
+        # #1 is the payoff: hold it longest. Other ranks get a full 5s.
+        item_len = 6.5 if rank == 1 else 5.0
+        # Start later than the old 20% mark: most source clips open with an
+        # intro, so 35% in is far more likely to land on the actual moment.
+        start = min(max(1.0, dur * 0.35), max(0.0, dur - item_len - 0.2))
         end = round(start + item_len, 2)
         start = round(start, 2)
 
+        # Distinctive label: drop generic leading words ("I built a ...")
+        # and extend the label until it differs from earlier items, so
+        # ranks never collapse to the same text (e.g. three "i built a").
         clean_words = re.sub(r"[^\w\s]", "", cand.get("title", "")).strip().split()
-        short_label = " ".join(clean_words[:3]).lower() if clean_words else "viral moment"
+        while clean_words and clean_words[0].lower() in ("i", "built", "a", "an", "the", "this", "is", "my"):
+            clean_words.pop(0)
+        label_words = clean_words[:3] if clean_words else ["viral", "moment"]
+        short_label = " ".join(label_words).lower()
         if len(short_label) > 22:
             short_label = short_label[:22].strip()
         label = f"{short_label} 🔥"[:26]
+        while label in seen_labels and len(label_words) < len(clean_words):
+            label_words.append(clean_words[len(label_words)])
+            short_label = " ".join(label_words).lower()
+            if len(short_label) > 22:
+                short_label = short_label[:22].strip()
+            label = f"{short_label} 🔥"[:26]
+        seen_labels.add(label)
 
         cap_text = hook_captions[idx % len(hook_captions)]
         captions = [[0.2, 2.2, cap_text]]
@@ -291,7 +337,7 @@ def run_agent_cloud(topic, proj, feedback=""):
                 "You are an expert viral YouTube Shorts ranking editor. "
                 "Output ONLY valid JSON matching project.json schema for 6 ranking clips. "
                 "PLAY order must be rank 6 first, down to rank 1 last. Total duration 32 to 38 seconds. "
-                "Each item length between 4.8 and 6.5 seconds. "
+                "Each item length between 5.0 and 6.5 seconds, and the #1 item must be at least 6.0 seconds so the payoff is held, not rushed. "
                 "Labels <= 26 chars. Captions <= 22 chars. yt_title ends with #shorts."
             )
             user_msg = (
@@ -333,12 +379,16 @@ def run_agent_cloud(topic, proj, feedback=""):
             log(f"OpenRouter cloud agent failed: {e}")
 
     if not spec:
-        log("generating deterministic ranking spec ...")
-        spec = generate_deterministic_spec(topic, proj, cands)
-        (proj / "project.json").write_text(json.dumps(spec, indent=2, ensure_ascii=False), encoding="utf-8")
+        # DO NOT publish a deterministic fallback cut. A fallback cut
+        # (fixed-length slices, first-words labels, generic captions) is
+        # what shipped as thin content on 2026-10-25. Fail instead so the
+        # topic stays unused and the run fails loudly; a deterministic
+        # spec is only allowed for --dry-run (see run_agent).
+        log("cloud agent produced no valid spec - refusing deterministic fallback for publish")
+        return
 
 
-def run_agent(topic, proj, extra="", feedback=""):
+def run_agent(topic, proj, extra="", feedback="", allow_deterministic=False):
     spec_path = proj / "project.json"
     if HERMES.exists():
         prompt = (ROOT / "agent_prompt.md").read_text(encoding="utf-8")
@@ -359,6 +409,14 @@ def run_agent(topic, proj, extra="", feedback=""):
     if not spec_path.exists():
         log("Hermes not present or did not create spec, using cloud agent")
         run_agent_cloud(topic, proj, feedback=feedback)
+    if not spec_path.exists() and allow_deterministic:
+        # Dry-run only: a deterministic spec is fine for local QC, but it
+        # must never reach publish (see run_agent_cloud).
+        log("dry-run: generating deterministic ranking spec for QC only ...")
+        _cands_file = proj / "candidates.json"
+        _cands = json.loads(_cands_file.read_text(encoding="utf-8")) if _cands_file.exists() else []
+        spec = generate_deterministic_spec(topic, proj, _cands)
+        spec_path.write_text(json.dumps(spec, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
 def build_meta(proj, spec, cands):
@@ -391,7 +449,10 @@ def next_slots(now, n=2):
         d = base + dt.timedelta(days=off)
         for t in times:
             hh, mm = map(int, t.split(":"))
-            s = dt.datetime(d.year, d.month, d.day, hh, mm, tzinfo=tz).astimezone(now.tzinfo)
+            # Slot keys are IST wall-clock times on every runner (the
+            # laptop wrote IST keys; a UTC GitHub runner must not invent
+            # a second, shifted set of keys for the same slots).
+            s = dt.datetime(d.year, d.month, d.day, hh, mm, tzinfo=tz).astimezone(IST)
             if s > now:
                 out.append(s)
     return sorted(out)[:n]
@@ -429,7 +490,7 @@ def build_one(slot, state, a):
             if not errs:
                 break
         run_agent(topic, proj, extra="" if attempt == 0 else "Previous attempt failed validation:\n- " + "\n- ".join(errs),
-                  feedback=feedback)
+                  feedback=feedback, allow_deterministic=a.dry_run)
         errs, _ = validate.validate(spec_path) if spec_path.exists() else (["project.json not written"], None)
         if not errs:
             break
@@ -450,7 +511,7 @@ def build_one(slot, state, a):
     if a.dry_run:
         log(f"dry run - video at {final}"); return True
 
-    now = dt.datetime.now().astimezone()
+    now = dt.datetime.now().astimezone(IST)
     if slot - now > dt.timedelta(minutes=10):
         meta["publish_at"] = slot.isoformat()
         when = f"scheduled for {key}"
@@ -497,7 +558,7 @@ def main():
             except Exception as e:
                 log(f"maintenance skipped: {str(e)[:150]}")
         # keep the next SLOTS_AHEAD slots filled (2 Shorts per day = always ~1 day queued)
-        now = dt.datetime.now().astimezone()
+        now = dt.datetime.now().astimezone(IST)
         upcoming = next_slots(now, SLOTS_AHEAD)
         todo = [s for s in upcoming
                 if a.force or a.dry_run or s.strftime("%Y-%m-%d %H:%M") not in state["slots"]]
@@ -512,8 +573,18 @@ def main():
                 if build_one(slot, state, a):
                     built += 1
                     break
-        if a.dry_run or not built:
+        if a.dry_run:
             return
+        if not built:
+            # A run that builds nothing must FAIL the workflow. Silently
+            # returning here is what made run #3 look like a Success in
+            # GitHub while uploading nothing.
+            log("ERROR: no Short built for any upcoming slot - failing the run so this is not reported as success")
+            try:
+                save_state(state)
+            except Exception:
+                pass
+            sys.exit(1)
 
         # weekly trend research: add fresh topics from what's going viral right now
         topics_all = json.loads((ROOT / "topics.json").read_text(encoding="utf-8"))
@@ -536,9 +607,15 @@ def main():
     except SystemExit as e:
         log(f"stopped: {e}")
         notify("YT Shorts: action needed", str(e)[:120])
+        raise
     except Exception:
         log("ERROR\n" + traceback.format_exc())
         notify("YT Shorts: error", "See yt-automation/logs for details.")
+        try:
+            save_state(state)
+        except Exception:
+            pass
+        sys.exit(1)
     finally:
         LOCK.unlink(missing_ok=True)
 
