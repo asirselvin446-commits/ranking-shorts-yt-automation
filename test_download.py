@@ -48,21 +48,23 @@ def main():
     print(f"cookies present: {COOKIES.exists()}", flush=True)
     ck = ["--cookies", str(COOKIES)] if COOKIES.exists() else []
     strategies = [
-        # mweb supports cookies (android/ios skip cookies in yt-dlp).
-        ("G-mweb-cookies-ejs", ["--extractor-args", "youtube:player_client=mweb"] + ck),
-        ("H-web-cookies-ejs", ["--extractor-args", "youtube:player_client=web"] + ck),
-        ("I-tv-cookies-ejs", ["--extractor-args", "youtube:player_client=tv"] + ck),
-        ("J-android-nocookies-ejs", ["--extractor-args", "youtube:player_client=android"]),
-        ("K-web-skipwebpage-cookies-ejs", ["--extractor-args", "youtube:player_client=web;player_skip=webpage"] + ck),
+        ("mweb-cookies-ejs", ["--extractor-args", "youtube:player_client=mweb"] + ck),
+        ("mweb-nocookies-ejs", ["--extractor-args", "youtube:player_client=mweb"]),
+        ("android-nocookies-ejs", ["--extractor-args", "youtube:player_client=android"]),
+        ("ios-nocookies-ejs", ["--extractor-args", "youtube:player_client=ios"]),
+        ("tv-nocookies-ejs", ["--extractor-args", "youtube:player_client=tv"]),
+        ("web-cookies-ejs", ["--extractor-args", "youtube:player_client=web"] + ck),
+        ("web-nocookies-ejs", ["--extractor-args", "youtube:player_client=web"]),
+        ("tv_embedded-nocookies-ejs", ["--extractor-args", "youtube:player_client=tv_embedded"]),
     ]
+    winners = []
     for name, args in strategies:
         try:
             if run(name, args):
-                print(f"WINNER: {name}", flush=True)
-                return
+                winners.append(name)
         except Exception as e:
             print(f"STRATEGY {name}: EXCEPTION {e}", flush=True)
-    print("NO STRATEGY SUCCEEDED", flush=True)
+    print(f"ALL WINNERS: {winners}", flush=True)
 
 
 if __name__ == "__main__":
