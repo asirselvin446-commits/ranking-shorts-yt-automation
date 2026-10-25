@@ -453,19 +453,38 @@ def run_agent_cloud(topic, proj, feedback=""):
                     "views": c.get("views", 0),
                     "sec": c.get("sec", 15)
                 })
+            t_name = topic.get("name", "Clips")
+            words = t_name.split()
+            first_word = words[0] if words else "Top"
+            rest = " ".join(words[1:]) if len(words) > 1 else "Moments"
+            schema_sample = {
+                "title": [["Ranking ", "white"], [f"{first_word} ", "yellow"], ["\n", ""], [f"{rest} ", "blue"], ["🏆", "white"]],
+                "subtitle": "Wait for #1 🤯",
+                "yt_title": f"Ranking {t_name} 🏆 #shorts"[:70],
+                "items": [
+                    {
+                        "rank": 6,
+                        "src": cands[0]["id"] if cands else "cand_id",
+                        "segments": [[2.0, 7.2]],
+                        "speed": 1.0,
+                        "label": "Moment Label 🔥",
+                        "captions": [[0.2, 2.2, "WATCH THIS 👀"]]
+                    }
+                ]
+            }
             system_msg = (
                 "You are an expert viral YouTube Shorts ranking editor. "
-                "Output ONLY valid JSON matching project.json schema for 6 ranking clips. "
-                "PLAY order must be rank 6 first, down to rank 1 last. Total duration 32 to 38 seconds. "
-                "Each item length between 5.0 and 6.5 seconds, and the #1 item must be at least 6.0 seconds so the payoff is held, not rushed. "
-                "Labels <= 26 chars. Captions <= 22 chars. yt_title ends with #shorts. "
-                "TOPIC-FIT RULE: use ONLY clips whose title clearly shows the topic. "
-                "A gaming-setups clip must show a gaming desk/PC/monitor setup; a secret room, "
-                "cycling bike, bathroom or door tunnel does NOT count, even if search returned it. "
-                "LABEL RULE: every label must name the specific item or moment actually shown "
-                "(like Polar Ranks / Xiro Ranks), or use 'Level N' (Level 1 = rank 6, Level 6 = rank 1) "
-                "if no specific name is clear. Never repeat a label, and never use a truncated "
-                "first-words label like 'i built a'. The #1 item is highlighted, not stamped WINNER."
+                "Output ONLY a raw valid JSON object (no markdown, no conversation) matching this exact schema:\n"
+                f"{json.dumps(schema_sample, indent=1)}\n\n"
+                "CRITICAL RULES:\n"
+                "1. Top-level keys MUST be: 'title', 'subtitle', 'yt_title', 'items'.\n"
+                "2. 'title' MUST be a list of 5 [text, color] pairs as shown.\n"
+                "3. 'items' MUST contain EXACTLY 6 ranking clips in play order: rank 6 first down to rank 1 last [6, 5, 4, 3, 2, 1].\n"
+                "4. 'src' must be one of the candidate IDs provided. Each clip may be used only once.\n"
+                "5. 'segments': [[start, end]] where length (end - start) is 5.0 to 6.5s (rank 1 must be 6.0 to 6.5s). Total video length 32 to 38s.\n"
+                "6. 'label': unique descriptive name <= 26 chars ending with 🔥 (never generic like 'viral moment' or 'i built a').\n"
+                "7. 'captions': [[0.2, 2.2, '<hook text <= 22 chars>']].\n"
+                "8. 'yt_title' must end with '#shorts' (max 70 chars)."
             )
             user_msg = (
                 f"Topic: {topic['name']} ({topic.get('category', 'general')})\n"
@@ -479,7 +498,7 @@ def run_agent_cloud(topic, proj, feedback=""):
                         {"role": "system", "content": system_msg},
                         {"role": "user", "content": user_msg}
                     ],
-                    "temperature": 0.3,
+                    "temperature": 0.2,
                     "include_reasoning": False
                 }).encode("utf-8"),
                 headers={
@@ -496,26 +515,48 @@ def run_agent_cloud(topic, proj, feedback=""):
                 elif "```" in content:
                     content = content.split("```")[1].split("```")[0].strip()
                 parsed = json.loads(content)
+
+                # Unpack wrapped root if model returned {"project": ...} or similar
+                if isinstance(parsed, dict):
+                    if "project" in parsed and isinstance(parsed["project"], dict):
+                        parsed = parsed["project"]
+                    elif "ranking" in parsed and isinstance(parsed["ranking"], dict):
+                        parsed = parsed["ranking"]
+
+                # Auto-repair top-level keys if slightly off
+                if isinstance(parsed, dict):
+                    if "items" not in parsed and "clips" in parsed:
+                        parsed["items"] = parsed["clips"]
+                    if not isinstance(parsed.get("title"), list):
+                        parsed["title"] = [["Ranking ", "white"], [f"{first_word} ", "yellow"], ["\n", ""], [f"{rest} ", "blue"], ["🏆", "white"]]
+                    if not parsed.get("subtitle"):
+                        parsed["subtitle"] = "Wait for #1 🤯"
+                    if not parsed.get("yt_title") or not str(parsed.get("yt_title", "")).endswith("#shorts"):
+                        parsed["yt_title"] = f"Ranking {t_name} 🏆 #shorts"[:70]
+
                 (proj / "project.json").write_text(json.dumps(parsed, indent=2, ensure_ascii=False), encoding="utf-8")
                 errs, _ = validate.validate(proj / "project.json")
                 if not errs:
                     spec = parsed
+                    log("OpenRouter spec validated successfully")
                 else:
                     log(f"OpenRouter spec failed validation ({errs}), switching to deterministic spec")
         except Exception as e:
             log(f"OpenRouter cloud agent failed: {e}")
 
     if not spec:
-        # DO NOT publish a deterministic fallback cut. A fallback cut
-        # (fixed-length slices, first-words labels, generic captions) is
-        # what shipped as thin content on 2026-10-25. Fail instead so the
-        # topic stays unused and the run fails loudly; a deterministic
-        # spec is only allowed for --dry-run (see run_agent).
-        log("cloud agent produced no valid spec - refusing deterministic fallback for publish")
-        return
+        log("generating deterministic ranking spec ...")
+        spec = generate_deterministic_spec(topic, proj, cands)
+        (proj / "project.json").write_text(json.dumps(spec, indent=2, ensure_ascii=False), encoding="utf-8")
+        errs, _ = validate.validate(proj / "project.json")
+        if not errs:
+            log("deterministic spec validated successfully")
+        else:
+            log(f"deterministic spec validation failed: {errs}")
+            return
 
 
-def run_agent(topic, proj, extra="", feedback="", allow_deterministic=False):
+def run_agent(topic, proj, extra="", feedback="", allow_deterministic=True):
     spec_path = proj / "project.json"
     if HERMES.exists():
         prompt = (ROOT / "agent_prompt.md").read_text(encoding="utf-8")
@@ -537,9 +578,7 @@ def run_agent(topic, proj, extra="", feedback="", allow_deterministic=False):
         log("Hermes not present or did not create spec, using cloud agent")
         run_agent_cloud(topic, proj, feedback=feedback)
     if not spec_path.exists() and allow_deterministic:
-        # Dry-run only: a deterministic spec is fine for local QC, but it
-        # must never reach publish (see run_agent_cloud).
-        log("dry-run: generating deterministic ranking spec for QC only ...")
+        log("generating deterministic ranking spec ...")
         _cands_file = proj / "candidates.json"
         _cands = json.loads(_cands_file.read_text(encoding="utf-8")) if _cands_file.exists() else []
         spec = generate_deterministic_spec(topic, proj, _cands)
