@@ -14,9 +14,9 @@ jobs:
   build-and-schedule:
     runs-on: ubuntu-latest
     timeout-minutes: 35
-    env:
-    TZ: Asia/Kolkata
 
+    env:
+      TZ: Asia/Kolkata
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -53,18 +53,19 @@ jobs:
           fi
 
       - name: Show yt-dlp version
-      run: |
-      python -m yt_dlp --version
+        run: |
+          python -m yt_dlp --version
+
       - name: Run Daily Ranking Shorts Pipeline
         run: |
           python daily.py
 
       # State must be committed even when the pipeline fails: a failed
-            # run still records analytics/comments, and (crucially) a
-                  # download-failed topic is NOT marked used, so committing it is
-                        # safe. The workflow still reports as failed from the step above.
-                        - name: Commit and Push State Updates
-                        if: always()
+      # run still records analytics/comments, and (crucially) a
+      # download-failed topic is NOT marked used, so committing it is
+      # safe. The workflow still reports as failed from the step above.
+      - name: Commit and Push State Updates
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
