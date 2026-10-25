@@ -25,8 +25,13 @@ def run(name, args):
     out = ROOT / f"test-{name}.mp4"
     if out.exists():
         out.unlink()
+    # 2026-10-25 diagnostic #1 finding: yt-dlp skipped the JS challenge
+    # solver (node) because the EJS remote component was not enabled,
+    # so 'n' challenge solving failed and only images were available.
+    # Every strategy here now enables it, as yt-dlp recommends.
     cmd = [sys.executable, "-m", "yt_dlp", "-q", "--no-progress", "--no-playlist",
-           "--js-runtimes", "node", "--socket-timeout", "30", "--retries", "1"] + args + [
+           "--js-runtimes", "node", "--remote-components", "ejs:github",
+           "--socket-timeout", "30", "--retries", "1"] + args + [
            "-f", "bv*[height<=720][ext=mp4]+ba[ext=m4a]/b[ext=mp4]/b", "--merge-output-format", "mp4",
            "-o", str(out), URL]
     r = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=180)
@@ -43,12 +48,12 @@ def main():
     print(f"cookies present: {COOKIES.exists()}", flush=True)
     ck = ["--cookies", str(COOKIES)] if COOKIES.exists() else []
     strategies = [
-        ("A-android-cookies", ["--extractor-args", "youtube:player_client=android"] + ck),
-        ("B-android-nocookies", ["--extractor-args", "youtube:player_client=android"]),
-        ("C-web-skipwebpage-cookies", ["--extractor-args", "youtube:player_client=web;player_skip=webpage"] + ck),
-        ("D-tv_embedded-cookies", ["--extractor-args", "youtube:player_client=tv_embedded"] + ck),
-        ("E-ios-cookies", ["--extractor-args", "youtube:player_client=ios"] + ck),
-        ("F-web-cookies", ["--extractor-args", "youtube:player_client=web"] + ck),
+        # mweb supports cookies (android/ios skip cookies in yt-dlp).
+        ("G-mweb-cookies-ejs", ["--extractor-args", "youtube:player_client=mweb"] + ck),
+        ("H-web-cookies-ejs", ["--extractor-args", "youtube:player_client=web"] + ck),
+        ("I-tv-cookies-ejs", ["--extractor-args", "youtube:player_client=tv"] + ck),
+        ("J-android-nocookies-ejs", ["--extractor-args", "youtube:player_client=android"]),
+        ("K-web-skipwebpage-cookies-ejs", ["--extractor-args", "youtube:player_client=web;player_skip=webpage"] + ck),
     ]
     for name, args in strategies:
         try:
