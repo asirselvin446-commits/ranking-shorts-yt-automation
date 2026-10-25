@@ -37,12 +37,14 @@ jobs:
         run: |
           python -m yt_dlp --version
 
-      - name: Restore YouTube Cookies from Secret
-        env:
-          YT_COOKIES_TXT: ${{ secrets.YT_COOKIES_TXT }}
+      - name: Install yt-dlp PO Token Provider Plugin
         run: |
-          python3 -c "import os; t=os.environ.get('YT_COOKIES_TXT','').strip(); open('cookies.txt','w',encoding='utf-8').write(t + '\n') if t else None"
-          if [ -s cookies.txt ]; then echo "cookies.txt restored (contents never logged)"; else echo "no YT_COOKIES_TXT secret - running without cookies"; fi
+          pip install bgutil-ytdlp-pot-provider
+
+      - name: Start BgUtils POT Provider Container
+        run: |
+          docker run --name bgutil-provider -d -p 4416:4416 brainicism/bgutil-ytdlp-pot-provider
+          sleep 5
 
       - name: Run Download Diagnostic
         run: |

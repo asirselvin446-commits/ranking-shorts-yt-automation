@@ -48,14 +48,12 @@ def main():
     print(f"cookies present: {COOKIES.exists()}", flush=True)
     ck = ["--cookies", str(COOKIES)] if COOKIES.exists() else []
     strategies = [
-        ("mweb-cookies-ejs", ["--extractor-args", "youtube:player_client=mweb"] + ck),
-        ("mweb-nocookies-ejs", ["--extractor-args", "youtube:player_client=mweb"]),
-        ("android-nocookies-ejs", ["--extractor-args", "youtube:player_client=android"]),
-        ("ios-nocookies-ejs", ["--extractor-args", "youtube:player_client=ios"]),
-        ("tv-nocookies-ejs", ["--extractor-args", "youtube:player_client=tv"]),
-        ("web-cookies-ejs", ["--extractor-args", "youtube:player_client=web"] + ck),
-        ("web-nocookies-ejs", ["--extractor-args", "youtube:player_client=web"]),
-        ("tv_embedded-nocookies-ejs", ["--extractor-args", "youtube:player_client=tv_embedded"]),
+        ("pot-default-nocookies", []),
+        ("pot-web-nocookies", ["--extractor-args", "youtube:player_client=web"]),
+        ("pot-mweb-nocookies", ["--extractor-args", "youtube:player_client=mweb"]),
+        ("pot-android-nocookies", ["--extractor-args", "youtube:player_client=android"]),
+        ("pot-ios-nocookies", ["--extractor-args", "youtube:player_client=ios"]),
+        ("pot-tv-nocookies", ["--extractor-args", "youtube:player_client=tv"]),
     ]
     winners = []
     for name, args in strategies:
