@@ -40,6 +40,16 @@ def validate(path):
     srcs = [it.get("src") for it in items]
     if len(set(srcs)) != len(srcs):
         errs.append("each clip (src) may be used only once")
+    # Label rule (2026-10-25 style bar): labels must be unique and must
+    # not be a generic truncation like "i built a" - a duplicate or
+    # generic label fails validation instead of publishing.
+    _labels = [str(it.get("label", "")).lower().strip() for it in items]
+    if len(set(_labels)) != len(_labels):
+        errs.append("rank labels must be unique, got duplicates: " + ", ".join(_labels))
+    for _lab in _labels:
+        _core = _lab.replace("🔥", "").strip()
+        if _core in ("i built a", "i built", "viral moment", ""):
+            errs.append(f"rank label '{_lab}' is generic - use a specific item name or a Level number")
     total, lens = 0.0, []
     for it in items:
         tag = f"#{it.get('rank')} {it.get('src')}"

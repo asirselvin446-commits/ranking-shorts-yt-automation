@@ -22,6 +22,67 @@ class DownloadError(Exception):
     This is an infrastructure failure (e.g. YouTube blocking this runner),
     not a bad topic, so the topic must NOT be marked used."""
 
+
+class TopicFitError(Exception):
+    """Too few candidates actually show the topic (2026-10-25 style bar).
+
+    The Gaming Setups Short shipped secret rooms, a cycling bike, a
+    bathroom and a door tunnel under a "Gaming Setups" title because the
+    title came from the topic name alone. A topic whose candidates do
+    not fit must be skipped, never published as a mismatched set."""
+
+
+# Words in a topic name that carry no subject meaning (dropped when
+# deriving the topic-fit keywords). Everything left is a content word.
+GENERIC_TOPIC_WORDS = {
+    "ranking", "craziest", "crazy", "best", "most", "unreal", "funniest",
+    "funny", "satisfying", "amazing", "coolest", "insane", "top", "ever",
+    "moments", "moment", "clips", "videos", "video", "of", "the", "and",
+}
+
+# Generic leading words that must never survive into a rank label.
+GENERIC_LABEL_WORDS = {"i", "built", "a", "an", "the", "this", "is", "my"}
+
+
+def topic_fit_keywords(topic_name):
+    """Content keywords of a topic, e.g. 'Craziest Gaming Setups' -> {'gaming', 'setup'}."""
+    words = re.sub(r"[^\w\s]", "", (topic_name or "")).lower().split()
+    return {w for w in words if w not in GENERIC_TOPIC_WORDS}
+
+
+def _stem(w):
+    return w[:-1] if len(w) > 3 and w.endswith("s") else w
+
+
+def candidate_fits_topic(title, keywords):
+    """True if the candidate's title visibly shows the topic.
+
+    A title matches only when EVERY topic keyword (or its singular/
+    plural stem) appears in it. Requiring all words matters: 'indoor
+    cycling dream setup' contains 'setup' but is not a gaming setup,
+    so it must NOT fit 'Gaming Setups' (keywords gaming + setup), even
+    though search returned it. Stricter here is the point - a topic
+    with too few fitting clips is skipped, not published mismatched."""
+    if not keywords:
+        return True
+    title_words = re.sub(r"[^\w\s]", "", (title or "")).lower().split()
+    title_stems = {_stem(w) for w in title_words}
+    return all(_stem(k) in title_stems for k in keywords)
+
+
+def filter_topic_fit(cands, topic):
+    """Split candidates into (fitting, rejected) for the topic-fit gate."""
+    keywords = topic_fit_keywords(topic.get("name", ""))
+    fitting = [c for c in cands if candidate_fits_topic(c.get("title", ""), keywords)]
+    rejected = [c for c in cands if c not in fitting]
+    return fitting, rejected, keywords
+
+
+def level_label(rank):
+    """RankZilla / MrPurifiedWater fallback: Level 1 is the lowest rank,
+    Level 6 is #1, so Level = 7 - rank."""
+    return f"Level {7 - rank}"
+
 ROOT = Path(__file__).resolve().parent
 PY = Path(sys.executable)
 HERMES = Path(os.environ.get("LOCALAPPDATA", r"C:\Users\asus\AppData\Local")) / "hermes/hermes-agent/venv/Scripts/hermes.exe"
@@ -266,29 +327,37 @@ def generate_deterministic_spec(topic, proj, cands):
         end = round(start + item_len, 2)
         start = round(start, 2)
 
-        # Distinctive label: drop generic leading words ("I built a ...")
-        # and extend the label until it differs from earlier items, so
-        # ranks never collapse to the same text (e.g. three "i built a").
+        # Label rule (2026-10-25 style bar: Polar / Xiro specific names,
+        # RankZilla / MrPurifiedWater Level numbers as fallback):
+        # drop generic leading words ("I built a ...") and extend the
+        # label until it differs from earlier items, so ranks never
+        # collapse to the same text (e.g. three "i built a"). If no
+        # specific name survives, fall back to a Level number instead
+        # of publishing a duplicate or generic label.
         clean_words = re.sub(r"[^\w\s]", "", cand.get("title", "")).strip().split()
-        while clean_words and clean_words[0].lower() in ("i", "built", "a", "an", "the", "this", "is", "my"):
+        while clean_words and clean_words[0].lower() in GENERIC_LABEL_WORDS:
             clean_words.pop(0)
-        label_words = clean_words[:3] if clean_words else ["viral", "moment"]
+        label_words = clean_words[:3] if clean_words else []
         short_label = " ".join(label_words).lower()
         if len(short_label) > 22:
             short_label = short_label[:22].strip()
-        label = f"{short_label} 🔥"[:26]
-        while label in seen_labels and len(label_words) < len(clean_words):
+        label = f"{short_label} 🔥"[:26] if short_label else ""
+        while label and label in seen_labels and len(label_words) < len(clean_words):
             label_words.append(clean_words[len(label_words)])
             short_label = " ".join(label_words).lower()
             if len(short_label) > 22:
                 short_label = short_label[:22].strip()
             label = f"{short_label} 🔥"[:26]
+        if not label or label in seen_labels:
+            label = f"{level_label(rank)} 🔥"
         seen_labels.add(label)
 
         cap_text = hook_captions[idx % len(hook_captions)]
         captions = [[0.2, 2.2, cap_text]]
         if rank == 1:
-            captions.append([3.0, 5.0, "WINNER 🏆"])
+            # Reference channels highlight #1 (yellow / crown), they do
+            # not stamp a loud WINNER over it.
+            captions.append([3.0, 5.0, "👑 #1"])
 
         items.append({
             "rank": rank,
@@ -338,7 +407,14 @@ def run_agent_cloud(topic, proj, feedback=""):
                 "Output ONLY valid JSON matching project.json schema for 6 ranking clips. "
                 "PLAY order must be rank 6 first, down to rank 1 last. Total duration 32 to 38 seconds. "
                 "Each item length between 5.0 and 6.5 seconds, and the #1 item must be at least 6.0 seconds so the payoff is held, not rushed. "
-                "Labels <= 26 chars. Captions <= 22 chars. yt_title ends with #shorts."
+                "Labels <= 26 chars. Captions <= 22 chars. yt_title ends with #shorts. "
+                "TOPIC-FIT RULE: use ONLY clips whose title clearly shows the topic. "
+                "A gaming-setups clip must show a gaming desk/PC/monitor setup; a secret room, "
+                "cycling bike, bathroom or door tunnel does NOT count, even if search returned it. "
+                "LABEL RULE: every label must name the specific item or moment actually shown "
+                "(like Polar Ranks / Xiro Ranks), or use 'Level N' (Level 1 = rank 6, Level 6 = rank 1) "
+                "if no specific name is clear. Never repeat a label, and never use a truncated "
+                "first-words label like 'i built a'. The #1 item is highlighted, not stamped WINNER."
             )
             user_msg = (
                 f"Topic: {topic['name']} ({topic.get('category', 'general')})\n"
@@ -422,14 +498,20 @@ def run_agent(topic, proj, extra="", feedback="", allow_deterministic=False):
 def build_meta(proj, spec, cands):
     by_id = {c["id"]: c for c in cands}
     credits = []
+    ranked = []
     for it in sorted(spec["items"], key=lambda i: i["rank"]):
         c = by_id.get(it["src"], {})
         credits.append(f"#{it['rank']} {c.get('uploader') or c.get('channel', '')} – https://youtube.com/shorts/{it['src']}")
+        # Description now names the actual ranked items (their on-screen
+        # labels), so the caption matches the clips instead of repeating
+        # only the generic topic title.
+        ranked.append(f"#{it['rank']} {it.get('label', '')}")
     subject = "".join(t for t, _ in spec["title"] if t != "\n").strip()
     tags = ["ranking", "shorts", "viral", "funny", "best moments"] + [w.lower() for w in subject.split() if w.isalpha()][1:]
     return {
         "title": spec["yt_title"][:100],
-        "description": f"Which one is your #1? Comment below 👇\n\n{subject}\n\nCredits:\n" + "\n".join(credits)
+        "description": f"Which one is your #1? Comment below 👇\n\n{subject}\n\nRanked:\n" + "\n".join(ranked)
+                       + "\n\nCredits:\n" + "\n".join(credits)
                        + "\n\n#shorts #ranking #viral",
         "tags": list(dict.fromkeys(tags))[:15],
         "category_id": "24",
@@ -478,7 +560,26 @@ def build_one(slot, state, a):
 
     cands = (json.loads((proj / "candidates.json").read_text(encoding="utf-8"))
              if (proj / "candidates.json").exists() else gather(topic, proj, state))
-    if len(cands) < 7:
+    # TOPIC-FIT GATE (2026-10-25): the title is generated from the topic
+    # name alone, so without this gate an off-topic clip set ships under
+    # a title it does not match (Gaming Setups over secret rooms). If
+    # fewer than 6 downloaded candidates actually show the topic, skip
+    # the topic for this cycle instead of publishing a mismatched set.
+    # This is a content skip, not a download failure, so the topic IS
+    # marked used (it will return on a fresh cycle with new candidates).
+    fitting, rejected, _kw = filter_topic_fit(cands, topic)
+    if len(fitting) < 6:
+        log(f"topic-fit gate: only {len(fitting)} of {len(cands)} candidates actually match "
+            f"'{topic['name']}' - skipping topic; rejected titles: "
+            + "; ".join(c.get("title", "")[:50] for c in rejected))
+        state["used_topics"].append(topic["slug"]); save_state(state); return False
+    if len(rejected):
+        log(f"topic-fit gate: dropped {len(rejected)} off-topic candidates for '{topic['name']}'")
+        cands = fitting
+        # The agent reads candidates.json, so it must only see the
+        # topic-fitting set, not the rejected off-topic clips.
+        (proj / "candidates.json").write_text(json.dumps(cands, indent=1, ensure_ascii=False), encoding="utf-8")
+    if len(cands) < 6:
         log("not enough clips for this topic - marking it used; next attempt tries another topic")
         state["used_topics"].append(topic["slug"]); save_state(state); return False
 
